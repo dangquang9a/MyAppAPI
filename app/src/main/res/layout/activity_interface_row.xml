@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterfaceRow">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/idTextName"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/idTextTime"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/idTextName"
+        android:layout_marginTop="46dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/idTextDay"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignStart="@+id/idTextName"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/idTextName"
+        android:layout_alignStart="@+id/textView2"
+        android:text="CODE:"
+        android:textColor="@android:color/holo_red_light"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/idTextTime"
+        android:text="TIME:"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="131dp"
+        android:text="DATE"
+        android:textColor="@android:color/holo_red_light"/>
+</RelativeLayout>

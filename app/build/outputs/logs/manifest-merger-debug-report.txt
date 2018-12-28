@@ -1,0 +1,277 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/96a2031832cf09d829c9e6081bf5770a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bee13424b4c4e94abc22b99971068124/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/66d374b065a2b739d13030df3ac47676/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-16.2.0.aar/69794f665fc16d487fee56638c6ce1e4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/cfd74ed8a392a57d0eaa8fc37f5d89cf/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/63932b5fee0fd2a0e573fbda71c82796/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/460706b618274b14fb7775d48426ff48/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ed1856a0fd83367a2d3c9e789d74fdf1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/eb5eb9ffd1f6ceae5b0f0f45a61e7226/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8c588fb578ae1015d26f7cad2ac518f4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d3941d93544101a2ee2617d061f18a3c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dcf51700cc81bd3f3801fe3536f810c3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/exifinterface-28.0.0.aar/e750d436bb6b94f65ce68f099df1925f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/346414c1006e060bffab29e094919fb0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a87b02c825bbbdb341860b02718d3d1a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/3f408c58582ab05ae56eb613db6dd4d6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:loader:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c02b5c743d175d37ef9bc1ab4ee30648/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/40e5c8efa0449104f043d9b482077384/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/76966b730e813d596e0f380eee5a20c6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/48bf647bc2ee945b2a4ddbe5866eeb61/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e26ff8099408715058316d9ea60d8eab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3346a34c86600f0b785c5466b43174fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/c847bd14e63e9051c980776229c9cd4d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2e49f5e12f7548656087760dca0b037f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/36062af96ab58037e17c0e444fc85ce3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/506ee1e76a2a5aeb82aecfc69e413814/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/288175ce25d9d77931465d2575eff16a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/47383512a53c126a6bbe1e403b8cc270/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0daef9309125b7ada2f9dc555a793943/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/52adad8d36375d70bff6a61e398bc3d8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce68c4c4e5eb2685352aa40e9818a485/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/555db0e72d6d688a2d8450db376e03d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/942bc96a51868d9a46480b21721cbf36/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c6171d93a8ecc2a32fa3f036c8b361cd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/714922c3c1c460c85c8c2ae0a03e92fb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8b2a96b54ae86507d848b8e6727e6346/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:3:5-49
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:8:5-69
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:8:22-66
+application
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:10:5-32:19
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/66d374b065a2b739d13030df3ac47676/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/66d374b065a2b739d13030df3ac47676/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-16.2.0.aar/69794f665fc16d487fee56638c6ce1e4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-16.2.0.aar/69794f665fc16d487fee56638c6ce1e4/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/cfd74ed8a392a57d0eaa8fc37f5d89cf/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/cfd74ed8a392a57d0eaa8fc37f5d89cf/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/460706b618274b14fb7775d48426ff48/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/460706b618274b14fb7775d48426ff48/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ed1856a0fd83367a2d3c9e789d74fdf1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ed1856a0fd83367a2d3c9e789d74fdf1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a87b02c825bbbdb341860b02718d3d1a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a87b02c825bbbdb341860b02718d3d1a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/36062af96ab58037e17c0e444fc85ce3/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/36062af96ab58037e17c0e444fc85ce3/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/506ee1e76a2a5aeb82aecfc69e413814/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/506ee1e76a2a5aeb82aecfc69e413814/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/36062af96ab58037e17c0e444fc85ce3/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:16:9-40
+activity#com.example.duongthanhtin.myappapi.MainActivity
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.example.duongthanhtin.myappapi.CreditMoney
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:24:9-49
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:24:19-46
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:25:9-27:47
+	android:theme
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:26:13-76
+activity#com.example.duongthanhtin.myappapi.Support
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:28:9-45
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:28:19-42
+activity#com.example.duongthanhtin.myappapi.History
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:29:9-45
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:29:19-42
+activity#com.example.duongthanhtin.myappapi.Main2Activity
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:30:9-51
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:30:19-48
+activity#com.example.duongthanhtin.myappapi.InterfaceRow
+ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:31:9-59
+	android:name
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml:31:19-47
+uses-sdk
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/96a2031832cf09d829c9e6081bf5770a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/96a2031832cf09d829c9e6081bf5770a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bee13424b4c4e94abc22b99971068124/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bee13424b4c4e94abc22b99971068124/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/66d374b065a2b739d13030df3ac47676/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-16.2.0.aar/66d374b065a2b739d13030df3ac47676/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-16.2.0.aar/69794f665fc16d487fee56638c6ce1e4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-16.2.0.aar/69794f665fc16d487fee56638c6ce1e4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/cfd74ed8a392a57d0eaa8fc37f5d89cf/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-16.0.0.aar/cfd74ed8a392a57d0eaa8fc37f5d89cf/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/63932b5fee0fd2a0e573fbda71c82796/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/63932b5fee0fd2a0e573fbda71c82796/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/460706b618274b14fb7775d48426ff48/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-phenotype-16.0.0.aar/460706b618274b14fb7775d48426ff48/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ed1856a0fd83367a2d3c9e789d74fdf1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ed1856a0fd83367a2d3c9e789d74fdf1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/eb5eb9ffd1f6ceae5b0f0f45a61e7226/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/eb5eb9ffd1f6ceae5b0f0f45a61e7226/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8c588fb578ae1015d26f7cad2ac518f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8c588fb578ae1015d26f7cad2ac518f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d3941d93544101a2ee2617d061f18a3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d3941d93544101a2ee2617d061f18a3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dcf51700cc81bd3f3801fe3536f810c3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/dcf51700cc81bd3f3801fe3536f810c3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/exifinterface-28.0.0.aar/e750d436bb6b94f65ce68f099df1925f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/exifinterface-28.0.0.aar/e750d436bb6b94f65ce68f099df1925f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/346414c1006e060bffab29e094919fb0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/346414c1006e060bffab29e094919fb0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a87b02c825bbbdb341860b02718d3d1a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a87b02c825bbbdb341860b02718d3d1a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/3f408c58582ab05ae56eb613db6dd4d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/3f408c58582ab05ae56eb613db6dd4d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:loader:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c02b5c743d175d37ef9bc1ab4ee30648/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c02b5c743d175d37ef9bc1ab4ee30648/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/40e5c8efa0449104f043d9b482077384/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/40e5c8efa0449104f043d9b482077384/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/76966b730e813d596e0f380eee5a20c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/76966b730e813d596e0f380eee5a20c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/48bf647bc2ee945b2a4ddbe5866eeb61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/48bf647bc2ee945b2a4ddbe5866eeb61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e26ff8099408715058316d9ea60d8eab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e26ff8099408715058316d9ea60d8eab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3346a34c86600f0b785c5466b43174fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/3346a34c86600f0b785c5466b43174fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/c847bd14e63e9051c980776229c9cd4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/c847bd14e63e9051c980776229c9cd4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2e49f5e12f7548656087760dca0b037f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2e49f5e12f7548656087760dca0b037f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/36062af96ab58037e17c0e444fc85ce3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/36062af96ab58037e17c0e444fc85ce3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/506ee1e76a2a5aeb82aecfc69e413814/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/506ee1e76a2a5aeb82aecfc69e413814/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/288175ce25d9d77931465d2575eff16a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/288175ce25d9d77931465d2575eff16a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/47383512a53c126a6bbe1e403b8cc270/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/47383512a53c126a6bbe1e403b8cc270/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0daef9309125b7ada2f9dc555a793943/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/0daef9309125b7ada2f9dc555a793943/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/52adad8d36375d70bff6a61e398bc3d8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/52adad8d36375d70bff6a61e398bc3d8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce68c4c4e5eb2685352aa40e9818a485/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce68c4c4e5eb2685352aa40e9818a485/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/555db0e72d6d688a2d8450db376e03d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/555db0e72d6d688a2d8450db376e03d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/942bc96a51868d9a46480b21721cbf36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/942bc96a51868d9a46480b21721cbf36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c6171d93a8ecc2a32fa3f036c8b361cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c6171d93a8ecc2a32fa3f036c8b361cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/714922c3c1c460c85c8c2ae0a03e92fb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/714922c3c1c460c85c8c2ae0a03e92fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8b2a96b54ae86507d848b8e6727e6346/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8b2a96b54ae86507d848b8e6727e6346/AndroidManifest.xml:20:5-44
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangquang9a/Downloads/MyAppAPI/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8611d6a28c81ee6e3d4b097d5cb8912d/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c872c25db385b4c293c9062cf9db0374/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/4b1c59192f2ddb17df1743582d54ae1d/AndroidManifest.xml:27:13-51
