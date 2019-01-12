@@ -16,6 +16,19 @@
         android:gravity="center"
         android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="ScanThizCard"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
     </LinearLayout>
 
     <LinearLayout
@@ -67,7 +80,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:id="@+id/idSupport"
+            android:id="@+id/idCalendar"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_margin="10dp"
@@ -94,14 +107,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/support"
+                    android:background="@drawable/calendar"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Support"
+                    android:text="Calendar"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -157,7 +170,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:id="@+id/idCalendar"
+            android:id="@+id/idSupport"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_margin="10dp"
@@ -184,14 +197,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/calendar"
+                    android:background="@drawable/support"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Calendar"
+                    android:text="Support"
                     android:textStyle="bold" />
 
             </LinearLayout>
