@@ -532,10 +532,6 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e5d06ab0fe231ea223062cbd6759a30c\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circlebackgroundgreen.xml.flat",
-        "source": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\src\\main\\res\\drawable\\circlebackgroundgreen.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e5d06ab0fe231ea223062cbd6759a30c\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -1754,6 +1750,10 @@
     {
         "merged": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_support.xml.flat",
         "source": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\src\\main\\res\\layout\\activity_support.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_page.xml.flat",
+        "source": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\src\\main\\res\\drawable\\rounded_page.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",

@@ -461,6 +461,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -712,7 +713,6 @@ drawable abc_vector_test
 drawable background
 drawable bank
 drawable calendar
-drawable circlebackgroundgreen
 drawable circlebackgroundpurple
 drawable circlebackgroundred
 drawable circlebackgroundyellow
@@ -760,6 +760,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_button
+drawable rounded_page
 drawable support
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -952,9 +953,6 @@ id textLocation
 id textName
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
-id textView2
-id textView3
 id time
 id title
 id titleDividerNoCustom
@@ -1107,6 +1105,7 @@ style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style AppTheme
+style Background
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

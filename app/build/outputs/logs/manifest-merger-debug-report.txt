@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.7.0.aar\e60828157949aa11f9a0ab83f0c99fd0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\e5d06ab0fe231ea223062cbd6759a30c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\ff7f5a7341a5e231097175977eb4b7e3\AndroidManifest.xml:2:1-9:12
@@ -44,20 +44,20 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Admin\.g
 MERGED from [com.android.support:print:28.0.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5ed2e9f80a0a22aabbaa110a2d5b7ebd\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\735f437f4f6c4c07d559d5be898c564d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\39d689aa55d29d6022e9a90ad5439944\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:2:11-69
@@ -78,7 +78,7 @@ ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:8:22-66
 application
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:10:5-32:19
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:10:5-33:19
 MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\ff7f5a7341a5e231097175977eb4b7e3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision:16.2.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\play-services-vision-16.2.0.aar\ff7f5a7341a5e231097175977eb4b7e3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision-common:16.2.0] C:\Users\Admin\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-16.2.0.aar\1ac19ab535f185f2e1ae8bb2ccd3cbaf\AndroidManifest.xml:7:5-20
@@ -116,47 +116,47 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Admin\.gra
 	android:allowBackup
 		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:16:9-42
 activity#com.example.duongthanhtin.myappapi.MainActivity
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:17:19-47
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:22:27-74
 activity#com.example.duongthanhtin.myappapi.CreditMoney
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:24:9-49
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:25:9-49
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:24:19-46
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:25:19-46
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:25:9-27:47
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:26:9-28:47
 	android:theme
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:27:13-44
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:28:13-44
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:26:13-76
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:27:13-76
 activity#com.example.duongthanhtin.myappapi.Support
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:28:9-45
-	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:28:19-42
-activity#com.example.duongthanhtin.myappapi.History
 ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:29:9-45
 	android:name
 		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:29:19-42
-activity#com.example.duongthanhtin.myappapi.Calendar
+activity#com.example.duongthanhtin.myappapi.History
 ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:30:9-45
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:30:19-43
-activity#com.example.duongthanhtin.myappapi.InterfaceRow
-ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:31:9-59
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:30:19-42
+activity#com.example.duongthanhtin.myappapi.Calendar
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:31:9-45
 	android:name
-		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:31:19-47
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:31:19-43
+activity#com.example.duongthanhtin.myappapi.InterfaceRow
+ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:32:9-59
+	android:name
+		ADDED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml:32:19-47
 uses-sdk
 INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Admin\Documents\GitHub\MyAppAPI\app\src\main\AndroidManifest.xml
