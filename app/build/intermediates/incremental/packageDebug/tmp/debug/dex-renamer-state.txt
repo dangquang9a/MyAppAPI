@@ -1,7 +1,7 @@
-#Fri Dec 28 09:50:42 ICT 2018
-base.0=/Users/dangquang9a/Downloads/MyAppAPI/app/build/intermediates/transforms/dexMerger/debug/1
+#Sat Jan 12 11:00:23 ICT 2019
+base.0=C\:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/dangquang9a/Downloads/MyAppAPI/app/build/intermediates/transforms/dexMerger/debug/0
+base.1=C\:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

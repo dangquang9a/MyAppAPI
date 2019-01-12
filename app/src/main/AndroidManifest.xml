@@ -27,7 +27,7 @@
             android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
         <activity android:name=".Support" />
         <activity android:name=".History" />
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".Calendar"/>
         <activity android:name=".InterfaceRow"></activity>
     </application>
 

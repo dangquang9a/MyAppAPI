@@ -8,7 +8,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private CardView CreditMoneyCard, SupportCard,HistoryCard;
+    private CardView CreditMoneyCard, SupportCard,HistoryCard, CalendarCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +18,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CreditMoneyCard =(CardView)findViewById(R.id.idCreditMoney);
         SupportCard     = (CardView)findViewById(R.id.idSupport);
         HistoryCard = (CardView)findViewById(R.id.idHistory);
+        CalendarCard = (CardView)findViewById(R.id.idCalendar);
+
+
         //ADD CLICK CARD
         CreditMoneyCard.setOnClickListener(this);
         SupportCard.setOnClickListener(this);
         HistoryCard.setOnClickListener(this);
+        CalendarCard.setOnClickListener(this);
+
     }
 
     @Override
@@ -32,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.idCreditMoney: i = new Intent(this,CreditMoney.class); startActivity(i); break;
             case R.id.idSupport: i = new Intent(this,Support.class); startActivity(i); break;
             case R.id.idHistory: i = new Intent(this,History.class); startActivity(i); break;
+            case R.id.idCalendar: i = new Intent(this,Calendar.class); startActivity(i); break;
             default: break;
         }
     }
