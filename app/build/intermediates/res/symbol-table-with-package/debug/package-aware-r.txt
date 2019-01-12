@@ -464,6 +464,7 @@ color foreground_material_light
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightblue
 color lightgray
 color material_blue_grey_800
 color material_blue_grey_900
@@ -504,6 +505,7 @@ color switch_thumb_normal_material_light
 color testcolorblue
 color tooltip_background_dark
 color tooltip_background_light
+color white
 color yello
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -706,6 +708,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable background
 drawable circlebackgroundgreen
 drawable circlebackgroundpurple
 drawable circlebackgroundred

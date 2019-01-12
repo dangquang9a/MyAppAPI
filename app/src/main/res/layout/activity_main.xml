@@ -6,28 +6,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@color/backgroundcolor"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <LinearLayout
-            android:clipToPadding="false"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Android Studio"
-            android:padding="10dp"
-            android:textColor="@android:color/black"/>
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
     </LinearLayout>
 
     <LinearLayout
             android:clipToPadding="false"
             android:gravity="center"
             android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:shadowColor="#000"
+            android:shadowDx="30"
+            android:shadowDy="30"
+            android:shadowRadius="50"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <android.support.v7.widget.CardView
@@ -36,7 +35,14 @@
             android:id="@+id/idCreditMoney"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -59,13 +65,6 @@
                     android:layout_height="1dp"
                     android:background="@color/lightgray"
                     android:layout_margin="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Recharge mobile cards "
-                    android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -74,20 +73,32 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:id="@+id/idSupport"
-        android:layout_width="160dp"
-        android:layout_height="190dp"
-        android:layout_margin="10dp">
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:shadowColor="#000"
+            android:shadowDx="30"
+            android:shadowDy="30"
+            android:shadowRadius="50"
             android:gravity="center">
+
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circlebackgroundred"
-                android:src="@drawable/ic_lightbulb_outline_black_24dp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:src="@drawable/ic_lightbulb_outline_black_24dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,13 +110,6 @@
                 android:layout_height="1dp"
                 android:background="@color/lightgray"
                 android:layout_margin="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Guide to the common application"
-                android:padding="5dp"
-                android:textColor="@android:color/darker_gray"/>
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -116,13 +120,24 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:shadowColor="#000"
+        android:shadowDx="30"
+        android:shadowDy="30"
+        android:shadowRadius="50"
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.CardView
             android:id="@+id/idHistory"
-            android:layout_width="159dp"
-            android:layout_height="match_parent"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
             android:layout_margin="10dp"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -152,14 +167,6 @@
                     android:layout_margin="10dp"
                     android:background="@color/lightgray" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Recharge mobile cards "
-                    android:textColor="@android:color/darker_gray" />
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -168,6 +175,13 @@
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -175,6 +189,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:shadowColor="#000"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="50"
                 android:orientation="vertical">
 
                 <ImageView
@@ -196,14 +214,6 @@
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
                     android:background="@color/lightgray" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Using Calendar"
-                    android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
