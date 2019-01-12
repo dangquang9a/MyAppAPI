@@ -13,6 +13,7 @@
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
     <color name="white">#ffffff</color>
+    <color name="red">#d51d25</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>
