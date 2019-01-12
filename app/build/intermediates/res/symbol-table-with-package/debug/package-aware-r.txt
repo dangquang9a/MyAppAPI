@@ -709,6 +709,8 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable background
+drawable bank
+drawable calendar
 drawable circlebackgroundgreen
 drawable circlebackgroundpurple
 drawable circlebackgroundred
@@ -737,11 +739,13 @@ drawable crop_image_menu_rotate_left
 drawable crop_image_menu_rotate_right
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable history
 drawable ic_attach_money_black_24dp
 drawable ic_help_outline_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_lightbulb_outline_black_24dp
+drawable money
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -754,6 +758,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable support
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT

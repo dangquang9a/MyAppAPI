@@ -34,7 +34,7 @@
             android:clickable="true"
             android:id="@+id/idCreditMoney"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="160dp"
             android:layout_margin="10dp"
             android:elevation="8dp"
             android:divider="@android:color/transparent"
@@ -43,28 +43,25 @@
             android:clipChildren="false"
             app:cardElevation="5dp"
             app:cardPreventCornerOverlap="false">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
-                    android:src="@drawable/ic_attach_money_black_24dp"
-                    android:padding="10dp"/>
+                    android:background="@drawable/bank"
+                    android:padding="10dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Mobile Cards"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/lightgray"
-                    android:layout_margin="10dp"/>
+                    android:text="Mobile Cards"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -74,7 +71,7 @@
         android:clickable="true"
         android:id="@+id/idSupport"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="160dp"
             android:layout_margin="10dp"
             android:elevation="8dp"
             android:divider="@android:color/transparent"
@@ -96,20 +93,14 @@
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:background="@drawable/circlebackgroundred"
-                android:padding="10dp"
-                android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+                android:background="@drawable/support"
+                android:padding="10dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
                 android:text="Support"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/lightgray"
-                android:layout_margin="10dp"/>
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -129,7 +120,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/idHistory"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="160dp"
             android:layout_margin="10dp"
             android:elevation="8dp"
             android:divider="@android:color/transparent"
@@ -150,9 +141,8 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_attach_money_black_24dp" />
+                    android:background="@drawable/history"
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -161,19 +151,13 @@
                     android:text="History"
                     android:textStyle="bold" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:id="@+id/idCalendar"
             android:layout_width="160dp"
-            android:layout_height="190dp"
+            android:layout_height="160dp"
             android:layout_margin="10dp"
             android:elevation="8dp"
             android:divider="@android:color/transparent"
@@ -198,9 +182,8 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_attach_money_black_24dp" />
+                    android:background="@drawable/calendar"
+                    android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -208,12 +191,6 @@
                     android:layout_marginTop="10dp"
                     android:text="Calendar"
                     android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
