@@ -2,4 +2,8 @@
     <string name="app_name">MyAppAPI</string>
     <string name="name">Name</string>
     <string name="location">Location</string>
+    <string name="email">Email</string>
+    <string name="cancel">cancel</string>
+    <string name="send">SEND</string>
+    <string name="hcwh">How can we help you?</string>
 </resources>

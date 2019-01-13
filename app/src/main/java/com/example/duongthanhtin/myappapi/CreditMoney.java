@@ -21,6 +21,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.text.method.KeyListener;
 import android.util.SparseArray;
 import android.view.MenuItem;
 import android.view.View;
@@ -333,6 +334,7 @@ public class CreditMoney extends AppCompatActivity  {
                 btnRescan.setVisibility(View.VISIBLE);
                 btnSave.setVisibility(View.VISIBLE);
                 btnOption.setVisibility(View.INVISIBLE);
+                ResultEt.setFocusableInTouchMode(true);
                 Uri resultUri = result.getUri(); //lay img uri
                 //  dat img vao img view
                 PreviewIv.setImageURI(resultUri);
