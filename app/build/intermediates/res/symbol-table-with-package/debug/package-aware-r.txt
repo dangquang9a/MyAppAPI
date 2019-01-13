@@ -1194,10 +1194,11 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
-id editText3
-id editText4
-id editText5
 id edit_query
+id edittextContact
+id edittextDate
+id edittextLocation
+id edittextName
 id end
 id end_padder
 id enterAlways
@@ -1222,9 +1223,13 @@ id icon
 id icon_group
 id icon_only
 id idBtnCall
+id idBtnCancel
+id idBtnCreateEvent
 id idBtnOption
 id idBtnRescan
+id idBtnRescanCalendar
 id idBtnSave
+id idBtnSaveCalendar
 id idCalendar
 id idCreditMoney
 id idHistory
@@ -1237,6 +1242,7 @@ id ifRoom
 id image
 id imageIv
 id imageView
+id imagevCalendar
 id info
 id invisible
 id italic
@@ -1341,6 +1347,7 @@ id textView2
 id textView5
 id textView6
 id textView7
+id textView9
 id text_input_password_toggle
 id textinput_counter
 id textinput_error

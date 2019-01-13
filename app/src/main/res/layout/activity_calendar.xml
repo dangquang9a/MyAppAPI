@@ -9,66 +9,203 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_page"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="106dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView5"
+            <LinearLayout
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="Name"
+                    android:textColor="@color/lightblue" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="53dp"
+                    android:text="Location"
+                    android:textColor="@color/lightblue" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="47dp"
+                    android:text="Date"
+                    android:textColor="@color/lightblue" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="53dp"
+                    android:text="Contact"
+                    android:textColor="@color/lightblue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edittextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_page"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edittextLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_page"
+                    android:ems="10"
+                    android:hint="Location"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edittextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_page"
+                    android:ems="10"
+                    android:hint="Date"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edittextContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_page"
+                    android:ems="10"
+                    android:hint="Email/Phone number"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:background="@color/lightgray"
+            app:cardCornerRadius="20dp"
+
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="17dp"
-                android:text="TextView" />
+                android:orientation="vertical"
+                android:padding="5dp">
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/imagevCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:color="@color/lightgray"
+                    android:maxHeight="250dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/idBtnSaveCalendar"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="23dp"
-                android:text="TextView" />
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="Save"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/idBtnRescanCalendar"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:text="TextView" />
-
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="Rescan"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/idBtnCreateEvent"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="Create"
+                android:textColor="@color/white" />
 
-            <EditText
-                android:id="@+id/editText4"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/idBtnCancel"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="Cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
 
-            <EditText
-                android:id="@+id/editText5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
         </LinearLayout>
-
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
