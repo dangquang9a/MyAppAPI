@@ -632,6 +632,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color backgroundcolor
+color black
 color black_overlay
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -700,6 +701,7 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
+color materialgray
 color mtrl_bottom_nav_colored_item_tint
 color mtrl_bottom_nav_item_tint
 color mtrl_btn_bg_color_disabled
@@ -1059,6 +1061,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background
 drawable bank
+drawable border
 drawable calendar
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1242,6 +1245,7 @@ id ifRoom
 id image
 id imageIv
 id imageView
+id imagelvView
 id imagevCalendar
 id info
 id invisible
@@ -1539,7 +1543,9 @@ string crop_image_menu_rotate_right
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
+string location
 string mtrl_chip_close_icon_content_description
+string name
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

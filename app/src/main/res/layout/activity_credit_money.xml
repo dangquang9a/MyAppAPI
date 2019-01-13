@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp">
+        android:layout_height="60dp">
 
     </LinearLayout>
 
@@ -65,7 +65,7 @@
                                 android:layout_height="52dp"
                                 android:autoLink="all"
                                 android:background="@null"
-                                android:hint=""
+                                android:hint="Content of image"
                                 android:padding="5dp"
                                 android:textColor="@color/lightblue" />
 
@@ -84,6 +84,7 @@
                         android:textStyle="bold" />
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/imagelvView"
                         android:layout_width="match_parent"
                         android:layout_height="207dp"
                         app:cardCornerRadius="20dp"
@@ -109,11 +110,6 @@
             </ScrollView>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

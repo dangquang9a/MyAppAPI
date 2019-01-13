@@ -46,6 +46,7 @@ import java.util.Date;
 public class CreditMoney extends AppCompatActivity  {
     EditText ResultEt;
     ImageView PreviewIv;
+    View ImageView;
     Button btnOption, btnCall, btnRescan, btnSave;
     Calendar calendar;
     private int mYear, mMonth, mHour, mMinute, mDay;
@@ -66,6 +67,7 @@ public class CreditMoney extends AppCompatActivity  {
 
         ResultEt =(findViewById(R.id.resultEt));
         PreviewIv = (findViewById(R.id.imageIv));
+        ImageView=(findViewById(R.id.imagelvView));
         calendar = Calendar.getInstance();
 
         //Camera Permission
@@ -183,6 +185,13 @@ public class CreditMoney extends AppCompatActivity  {
 
 
                 }
+            }
+        });
+
+        ImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnOption.callOnClick();
             }
         });
     }
