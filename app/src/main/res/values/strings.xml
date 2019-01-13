@@ -6,4 +6,6 @@
     <string name="cancel">cancel</string>
     <string name="send">SEND</string>
     <string name="hcwh">How can we help you?</string>
+    <string name="date">Date</string>
+    <string name="contact">Contact</string>
 </resources>

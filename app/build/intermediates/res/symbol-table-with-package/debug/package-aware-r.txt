@@ -1160,8 +1160,8 @@ id beginning
 id blocking
 id bottom
 id btnExit
-id btn_signup
-id btn_signup2
+id btn_cancel
+id btn_send
 id buttonPanel
 id cancel_action
 id center
@@ -1200,8 +1200,8 @@ id dimensions
 id direct
 id disableHome
 id edit_query
-id edittextContact
 id edittextDate
+id edittextEmail
 id edittextLocation
 id edittextName
 id end
@@ -1356,10 +1356,6 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
-id textView5
-id textView6
-id textView7
-id textView9
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1541,6 +1537,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string contact
 string crop_image_activity_no_permissions
 string crop_image_activity_title
 string crop_image_menu_crop
@@ -1549,6 +1546,7 @@ string crop_image_menu_flip_horizontally
 string crop_image_menu_flip_vertically
 string crop_image_menu_rotate_left
 string crop_image_menu_rotate_right
+string date
 string email
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
