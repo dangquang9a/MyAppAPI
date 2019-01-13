@@ -46,7 +46,7 @@ import java.util.Date;
 public class CreditMoney extends AppCompatActivity  {
     EditText ResultEt;
     ImageView PreviewIv;
-    Button btnOption, btnCall;
+    Button btnOption, btnCall, btnRescan;
     Calendar calendar;
     private int mYear, mMonth, mHour, mMinute, mDay;
     private String mTime;
@@ -77,12 +77,21 @@ public class CreditMoney extends AppCompatActivity  {
         //Button Option
         btnOption = (Button) findViewById(R.id.idBtnOption);
         btnCall =(Button)findViewById(R.id.idBtnCall);
+        btnRescan=(Button)findViewById(R.id.idBtnRescan);
         btnOption.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showImageImportDialog();
+                btnRescan.setVisibility(View.VISIBLE);
+            }
+        });
+        btnRescan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showImageImportDialog();
             }
         });
+
 
         //DataBase
         final DataBase db = new DataBase(getApplicationContext(),"Subject_History",null,1);

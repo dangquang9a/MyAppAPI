@@ -1227,6 +1227,7 @@ id icon_group
 id icon_only
 id idBtnCall
 id idBtnOption
+id idBtnRescan
 id idCalendar
 id idCreditMoney
 id idHistory

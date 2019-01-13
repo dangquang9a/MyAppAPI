@@ -10,19 +10,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="115dp"
-            android:clipToPadding="false"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <android.support.design.widget.NavigationView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -104,6 +93,15 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal"
@@ -113,21 +111,35 @@
 
         <Button
             android:id="@+id/idBtnOption"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_button"
-            android:text="Option"
+            android:text="Photo"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/idBtnRescan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/rounded_button"
+            android:text="Rescan"
             android:textColor="@color/white" />
 
         <Button
             android:id="@+id/idBtnCall"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="55dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_button"
-            android:text="Call"
+            android:text="Recharge"
             android:textAllCaps="true"
             android:textColor="@color/white" />
 
