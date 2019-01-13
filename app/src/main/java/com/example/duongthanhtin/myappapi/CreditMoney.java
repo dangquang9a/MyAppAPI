@@ -46,7 +46,7 @@ import java.util.Date;
 public class CreditMoney extends AppCompatActivity  {
     EditText ResultEt;
     ImageView PreviewIv;
-    Button btnOption, btnCall, btnRescan;
+    Button btnOption, btnCall, btnRescan, btnSave;
     Calendar calendar;
     private int mYear, mMonth, mHour, mMinute, mDay;
     private String mTime;
@@ -78,11 +78,52 @@ public class CreditMoney extends AppCompatActivity  {
         btnOption = (Button) findViewById(R.id.idBtnOption);
         btnCall =(Button)findViewById(R.id.idBtnCall);
         btnRescan=(Button)findViewById(R.id.idBtnRescan);
+        btnSave=(Button)findViewById(R.id.idBtnSave);
+
+        //DataBase
+        final DataBase db = new DataBase(getApplicationContext(),"Subject_History",null,1);
+        db.QueryData("CREATE TABLE IF NOT EXISTS Table_works(Id INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR(150),Time VARCHAR(150),Day VARCHAR(150),Image BLOB)");
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(CreditMoney.this,"Saving...",Toast.LENGTH_SHORT).show();
+                mHour = calendar.get(Calendar.HOUR_OF_DAY);
+                mMinute = calendar.get(Calendar.MINUTE);
+                mYear = calendar.get(Calendar.YEAR);
+                mMonth = calendar.get(Calendar.MONTH) + 1;
+                mDay = calendar.get(Calendar.DATE);
+
+                mDate = mDay + "/" + mMonth + "/" + mYear;
+                mTime = mHour + ":" + mMinute;
+
+                String Name = ResultEt.getText().toString();
+                String Time = mTime.toString();
+                String Date = mDate.toString();
+                if(Name.equals(""))
+                {
+                    Toast.makeText(CreditMoney.this,"Please insert data",Toast.LENGTH_SHORT).show();
+                }
+                else {
+
+                    db.INSERT_SUBJECT(
+                            Name,
+                            Time,
+                            Date,
+                            ImageView_To_Byte(image_uri)
+
+                    );
+                    Toast.makeText(CreditMoney.this,"Saved",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
         btnOption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showImageImportDialog();
-                btnRescan.setVisibility(View.VISIBLE);
+
             }
         });
         btnRescan.setOnClickListener(new View.OnClickListener() {
@@ -93,9 +134,7 @@ public class CreditMoney extends AppCompatActivity  {
         });
 
 
-        //DataBase
-        final DataBase db = new DataBase(getApplicationContext(),"Subject_History",null,1);
-        db.QueryData("CREATE TABLE IF NOT EXISTS Table_works(Id INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR(150),Time VARCHAR(150),Day VARCHAR(150),Image BLOB)");
+
         //database.QueryData("INSERT INTO Table_works VALUES(null,'Mobile','11h','Monday')");
         final Dialog dialog=new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -119,7 +158,7 @@ public class CreditMoney extends AppCompatActivity  {
                 String Date = mDate.toString();
                 if(Name.equals(""))
                 {
-                    Toast.makeText(CreditMoney.this,"Pls insert data",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CreditMoney.this,"Please insert data",Toast.LENGTH_SHORT).show();
                 }
                 else {
 
@@ -282,6 +321,9 @@ public class CreditMoney extends AppCompatActivity  {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode==RESULT_OK)
             {
+                btnRescan.setVisibility(View.VISIBLE);
+                btnSave.setVisibility(View.VISIBLE);
+                btnOption.setVisibility(View.INVISIBLE);
                 Uri resultUri = result.getUri(); //lay img uri
                 //  dat img vao img view
                 PreviewIv.setImageURI(resultUri);
