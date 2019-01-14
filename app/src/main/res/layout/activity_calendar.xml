@@ -65,12 +65,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText
-                    android:id="@+id/edittextLocation"
+                <Spinner
+                    android:id="@+id/spnLocation"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/location"
-                    android:singleLine="true" />
+                    android:layout_height="50dp" />
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>

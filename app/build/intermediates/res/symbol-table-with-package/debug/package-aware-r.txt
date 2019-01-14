@@ -1202,7 +1202,6 @@ id disableHome
 id edit_query
 id edittextDate
 id edittextEmail
-id edittextLocation
 id edittextName
 id end
 id end_padder
@@ -1252,7 +1251,6 @@ id imagevCalendar
 id info
 id input_
 id input_content
-id input_email
 id input_layout_email
 id input_layout_name
 id input_name
@@ -1334,6 +1332,7 @@ id snap
 id snapMargins
 id spacer
 id split_action_bar
+id spnLocation
 id spread
 id spread_inside
 id src_atop
