@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Admin\\Documents\\GitHub\\MyAppAPI\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
+            "outputFile": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.7.0.aar\\e60828157949aa11f9a0ab83f0c99fd0\\res\\values-he\\values-he.xml",
+                    "source": "/Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/96a2031832cf09d829c9e6081bf5770a/res/values-he/values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -175,6 +175,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
                 android:text="Recharge"
+                android:visibility="invisible"
                 android:textAllCaps="true"
                 android:textColor="@color/white" />
 

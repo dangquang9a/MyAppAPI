@@ -334,6 +334,7 @@ public class CreditMoney extends AppCompatActivity  {
                 btnRescan.setVisibility(View.VISIBLE);
                 btnSave.setVisibility(View.VISIBLE);
                 btnOption.setVisibility(View.INVISIBLE);
+                btnCall.setVisibility(View.VISIBLE);
                 ResultEt.setFocusableInTouchMode(true);
                 Uri resultUri = result.getUri(); //lay img uri
                 //  dat img vao img view
