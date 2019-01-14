@@ -42,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:hint="@string/hcwh"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:inputType="" />
         </android.support.design.widget.TextInputLayout>
 
         <LinearLayout
