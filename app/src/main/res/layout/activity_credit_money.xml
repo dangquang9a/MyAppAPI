@@ -10,7 +10,94 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_page">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/result"
+                    android:textColor="@color/lightblue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_page"
+                    app:cardBackgroundColor="@color/lightgray"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/resultEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:autoLink="all"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="@string/content_of_image"
+                            android:padding="5dp"
+                            android:textColor="@color/lightblue" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/image_preview"
+                    android:textColor="@color/lightblue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/imagelvView"
+                    android:layout_width="match_parent"
+                    android:layout_height="207dp"
+                    android:background="@color/lightgray"
+                    app:cardCornerRadius="20dp"
+
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageIv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:color="@color/lightgray"
+                            android:maxHeight="250dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
@@ -18,99 +105,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_page"
-            >
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="Result:"
-                        android:textColor="@color/lightblue"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_page"
-                        app:cardBackgroundColor="@color/lightgray"
-                        app:cardCornerRadius="20dp"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <EditText
-                                android:id="@+id/resultEt"
-                                android:layout_width="match_parent"
-                                android:layout_height="52dp"
-                                android:autoLink="all"
-                                android:focusable="false"
-                                android:background="@null"
-                                android:hint="Content of image"
-                                android:padding="5dp"
-                                android:textColor="@color/lightblue" />
-
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="Image Preview:"
-                        android:textColor="@color/lightblue"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/imagelvView"
-                        android:layout_width="match_parent"
-                        android:layout_height="207dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/lightgray"
-
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:id="@+id/imageIv"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:color="@color/lightgray"
-                                android:maxHeight="250dp" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </LinearLayout>
-            </ScrollView>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,7 +121,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:text="Save"
+                android:text="@string/save"
                 android:textAllCaps="true"
                 android:visibility="gone"
                 android:textColor="@color/white" />
@@ -138,10 +132,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="30dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:text="Rescan"
+                android:text="@string/rescan"
                 android:visibility="gone"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -162,7 +156,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:text="Photo"
+                android:text="@string/take_photo"
                 android:textColor="@color/white" />
 
             <Button
@@ -171,10 +165,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="30dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:text="Recharge"
+                android:text="@string/recharge"
                 android:visibility="invisible"
                 android:textAllCaps="true"
                 android:textColor="@color/white" />

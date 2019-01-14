@@ -1251,7 +1251,6 @@ id imagevCalendar
 id info
 id input_
 id input_content
-id input_layout_email
 id input_layout_name
 id input_name
 id invisible
@@ -1514,7 +1513,9 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string appname
 string bottom_sheet_behavior
+string calendar
 string cancel
 string character_counter_content_description
 string character_counter_pattern
@@ -1537,6 +1538,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string contact
+string content_of_image
 string crop_image_activity_no_permissions
 string crop_image_activity_title
 string crop_image_menu_crop
@@ -1547,11 +1549,15 @@ string crop_image_menu_rotate_left
 string crop_image_menu_rotate_right
 string date
 string email
+string exit_app
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hcwh
 string hide_bottom_view_on_scroll_behavior
+string history
+string image_preview
 string location
+string mobile_cards
 string mtrl_chip_close_icon_content_description
 string name
 string password_toggle_content_description
@@ -1560,9 +1566,15 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string pick_image_intent_chooser_title
+string recharge
+string rescan
+string result
+string save
 string search_menu_title
 string send
 string status_bar_notification_info_overflow
+string support
+string take_photo
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

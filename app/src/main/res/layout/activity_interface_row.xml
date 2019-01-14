@@ -27,7 +27,7 @@
         android:layout_marginTop="26dp"
         android:layout_marginEnd="7dp"
         android:layout_toEndOf="@+id/imageView"
-        android:text="TextView"
+        android:text="@string/textname"
         android:textColor="@android:color/black"
         android:textSize="14sp" />
 
@@ -39,7 +39,7 @@
         android:layout_marginStart="11dp"
         android:layout_marginTop="62dp"
         android:layout_toEndOf="@+id/imageView"
-        android:text="TextView"
+        android:text="@string/texttime"
         android:textColor="@color/gray"
         android:textSize="10sp" />
 
@@ -53,7 +53,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginBottom="4dp"
         android:layout_toEndOf="@+id/imageView"
-        android:text="TextView"
+        android:text="TextDay"
         android:textColor="@color/gray"
         android:textSize="10sp" />
 

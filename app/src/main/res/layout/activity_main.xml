@@ -18,11 +18,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
-            android:text="ScanThizCard"
+            android:text="@string/appname"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -35,7 +35,6 @@
             android:clipToPadding="false"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_alignParentBottom="true"
             android:shadowColor="#000"
             android:shadowDx="30"
             android:shadowDy="30"
@@ -45,6 +44,7 @@
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
+            android:focusable="true"
             android:id="@+id/idCreditMoney"
             android:layout_width="160dp"
             android:layout_height="160dp"
@@ -73,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Mobile Cards"
+                    android:text="@string/mobile_cards"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -85,6 +85,7 @@
             android:layout_height="160dp"
             android:layout_margin="10dp"
             android:clickable="true"
+            android:focusable="true"
             android:clipChildren="false"
             android:clipToPadding="false"
             android:divider="@android:color/transparent"
@@ -114,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Calendar"
+                    android:text="@string/calendar"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -145,6 +146,7 @@
             app:cardElevation="5dp"
             app:cardPreventCornerOverlap="false"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
@@ -163,7 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="History"
+                    android:text="@string/history"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -182,6 +184,7 @@
             app:cardElevation="5dp"
             app:cardPreventCornerOverlap="false"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
@@ -204,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Support"
+                    android:text="@string/support"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -233,7 +236,7 @@
         android:background="@drawable/rounded_button"
         android:foreground="?android:attr/selectableItemBackground"
         android:gravity="center"
-        android:text="Exit App"
+        android:text="@string/exit_app"
         android:textAllCaps="false"
         android:textStyle="bold"
         android:typeface="sans" />

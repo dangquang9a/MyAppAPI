@@ -96,21 +96,21 @@ public final class R {
         public static final int icon = 0x7f080069;
         public static final int icon_group = 0x7f08006a;
         public static final int info = 0x7f080082;
-        public static final int italic = 0x7f080089;
-        public static final int line1 = 0x7f08008f;
-        public static final int line3 = 0x7f080090;
-        public static final int media_actions = 0x7f080094;
-        public static final int normal = 0x7f08009e;
-        public static final int notification_background = 0x7f08009f;
-        public static final int notification_main_column = 0x7f0800a0;
-        public static final int notification_main_column_container = 0x7f0800a1;
-        public static final int right_icon = 0x7f0800b4;
-        public static final int right_side = 0x7f0800b5;
-        public static final int status_bar_latest_event_content = 0x7f0800de;
-        public static final int text = 0x7f0800e6;
-        public static final int text2 = 0x7f0800e7;
-        public static final int time = 0x7f0800f1;
-        public static final int title = 0x7f0800f2;
+        public static final int italic = 0x7f080088;
+        public static final int line1 = 0x7f08008e;
+        public static final int line3 = 0x7f08008f;
+        public static final int media_actions = 0x7f080093;
+        public static final int normal = 0x7f08009d;
+        public static final int notification_background = 0x7f08009e;
+        public static final int notification_main_column = 0x7f08009f;
+        public static final int notification_main_column_container = 0x7f0800a0;
+        public static final int right_icon = 0x7f0800b3;
+        public static final int right_side = 0x7f0800b4;
+        public static final int status_bar_latest_event_content = 0x7f0800dd;
+        public static final int text = 0x7f0800e5;
+        public static final int text2 = 0x7f0800e6;
+        public static final int time = 0x7f0800f0;
+        public static final int title = 0x7f0800f1;
     }
     public static final class integer {
         private integer() {}
@@ -140,7 +140,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0d0059;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0064;
     }
     public static final class style {
         private style() {}
