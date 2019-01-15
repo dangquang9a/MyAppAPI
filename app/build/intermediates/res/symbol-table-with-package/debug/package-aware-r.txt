@@ -1200,9 +1200,6 @@ id dimensions
 id direct
 id disableHome
 id edit_query
-id edittextDate
-id edittextEmail
-id edittextName
 id end
 id end_padder
 id enterAlways
@@ -1291,6 +1288,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id previewimage
 id progress_circular
 id progress_horizontal
 id radio
@@ -1331,8 +1329,13 @@ id snap
 id snapMargins
 id spacer
 id split_action_bar
+id spnDate
+id spnEmail
 id spnLocation
 id spnLocation2
+id spnName
+id spnPhone
+id spnTime
 id spread
 id spread_inside
 id src_atop
@@ -1375,7 +1378,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id vCalendar
 id view_offset_helper
 id visible
 id wide

@@ -39,11 +39,10 @@ import java.util.List;
 
 public class Calendar extends  AppCompatActivity {
     String resultText;
-    EditText etName, etContact, etDate;
     ImageView previewIv;
-    View imageView;
+    View previewIMG;
     Button btnOption, btnRescan, btnSave;
-    Spinner spinnerLocation, spinnerLocation2;
+    Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerEmail, spinnerPhone, spinnerTime, spinnerDate;
     java.util.Calendar calendar;
     private int mYear, mMonth, mHour, mMinute, mDay;
     private String mTime;
@@ -64,13 +63,15 @@ public class Calendar extends  AppCompatActivity {
 
 
         // get some useful variables
-        imageView = (findViewById(R.id.vCalendar));
         previewIv = (findViewById(R.id.imagevCalendar));
-        etName = (findViewById(R.id.edittextName));
-        etContact = (findViewById(R.id.edittextEmail));
-        etDate = findViewById(R.id.edittextDate);
+        previewIMG = (findViewById(R.id.previewimage));
         spinnerLocation = findViewById(R.id.spnLocation);
         spinnerLocation2 = findViewById(R.id.spnLocation2);
+        spinnerName=findViewById(R.id.spnName);
+        spinnerEmail=findViewById(R.id.spnEmail);
+        spinnerPhone=findViewById(R.id.spnPhone);
+        spinnerDate=findViewById(R.id.spnDate);
+        spinnerTime=findViewById(R.id.spnTime);
         resultText = "";
 
 
@@ -82,7 +83,7 @@ public class Calendar extends  AppCompatActivity {
         storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        previewIMG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showImageImportDialog();
@@ -229,6 +230,9 @@ public class Calendar extends  AppCompatActivity {
 
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
+                    PutDataInSpinner(cardInformation, spinnerName, 3);
+                    PutDataInSpinner(cardInformation, spinnerEmail, 2);
+                    PutDataInSpinner(cardInformation, spinnerPhone, 4);
 
                     //etName.setText(String.valueOf(cardInformation.getEventNames().get(1)));
                     //etContact.setText(String.valueOf(cardInformation.getEmails().get(1)));

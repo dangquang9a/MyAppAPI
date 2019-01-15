@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="40dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded_page"
         android:orientation="vertical">
@@ -22,59 +21,47 @@
             android:layout_marginRight="10dp"
             android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/edittextName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/name"
-                    android:inputType="textPersonName"
-                    android:paddingTop="20dp"
-                    android:singleLine="true" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/edittextEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/contact"
-                    android:inputType="textEmailAddress" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/edittextDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/date"
-                    android:singleLine="true" />
-            </android.support.design.widget.TextInputLayout>
             <Spinner
-                    android:id="@+id/spnLocation"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp" />
+                android:id="@+id/spnName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/spnEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/spnPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/spnDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/spnTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/spnLocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
 
             <Spinner
                 android:id="@+id/spnLocation2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="40dp" />
 
 
         </LinearLayout>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
+            android:id="@+id/previewimage"
             android:layout_height="wrap_content"
             android:background="@color/lightgray"
             app:cardCornerRadius="20dp"
@@ -87,15 +74,10 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
-                <View
-                    android:id="@+id/vCalendar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
                 <ImageView
                     android:id="@+id/imagevCalendar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:color="@color/lightgray"
                     android:maxHeight="250dp" />
             </LinearLayout>
