@@ -741,27 +741,27 @@ public final class R {
         public static final int shortcut = 0x7f0800ca;
         public static final int spacer = 0x7f0800d3;
         public static final int split_action_bar = 0x7f0800d4;
-        public static final int src_atop = 0x7f0800d8;
-        public static final int src_in = 0x7f0800d9;
-        public static final int src_over = 0x7f0800da;
-        public static final int start = 0x7f0800dc;
-        public static final int submenuarrow = 0x7f0800df;
-        public static final int submit_area = 0x7f0800e0;
-        public static final int tabMode = 0x7f0800e1;
-        public static final int tag_transition_group = 0x7f0800e2;
-        public static final int text = 0x7f0800e5;
-        public static final int text2 = 0x7f0800e6;
-        public static final int textSpacerNoButtons = 0x7f0800e7;
-        public static final int textSpacerNoTitle = 0x7f0800e8;
-        public static final int time = 0x7f0800f0;
-        public static final int title = 0x7f0800f1;
-        public static final int titleDividerNoCustom = 0x7f0800f2;
-        public static final int title_template = 0x7f0800f3;
-        public static final int top = 0x7f0800f4;
-        public static final int topPanel = 0x7f0800f5;
-        public static final int uniform = 0x7f0800fc;
-        public static final int up = 0x7f0800fe;
-        public static final int wrap_content = 0x7f080105;
+        public static final int src_atop = 0x7f0800d9;
+        public static final int src_in = 0x7f0800da;
+        public static final int src_over = 0x7f0800db;
+        public static final int start = 0x7f0800dd;
+        public static final int submenuarrow = 0x7f0800e0;
+        public static final int submit_area = 0x7f0800e1;
+        public static final int tabMode = 0x7f0800e2;
+        public static final int tag_transition_group = 0x7f0800e3;
+        public static final int text = 0x7f0800e6;
+        public static final int text2 = 0x7f0800e7;
+        public static final int textSpacerNoButtons = 0x7f0800e8;
+        public static final int textSpacerNoTitle = 0x7f0800e9;
+        public static final int time = 0x7f0800f1;
+        public static final int title = 0x7f0800f2;
+        public static final int titleDividerNoCustom = 0x7f0800f3;
+        public static final int title_template = 0x7f0800f4;
+        public static final int top = 0x7f0800f5;
+        public static final int topPanel = 0x7f0800f6;
+        public static final int uniform = 0x7f0800fd;
+        public static final int up = 0x7f0800ff;
+        public static final int wrap_content = 0x7f080107;
     }
     public static final class integer {
         private integer() {}
@@ -852,17 +852,17 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0d0024;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0d0025;
         public static final int abc_toolbar_collapse_description = 0x7f0d0026;
-        public static final int crop_image_activity_no_permissions = 0x7f0d0043;
-        public static final int crop_image_activity_title = 0x7f0d0044;
-        public static final int crop_image_menu_crop = 0x7f0d0045;
-        public static final int crop_image_menu_flip = 0x7f0d0046;
-        public static final int crop_image_menu_flip_horizontally = 0x7f0d0047;
-        public static final int crop_image_menu_flip_vertically = 0x7f0d0048;
-        public static final int crop_image_menu_rotate_left = 0x7f0d0049;
-        public static final int crop_image_menu_rotate_right = 0x7f0d004a;
-        public static final int pick_image_intent_chooser_title = 0x7f0d005d;
-        public static final int search_menu_title = 0x7f0d0062;
-        public static final int status_bar_notification_info_overflow = 0x7f0d0064;
+        public static final int crop_image_activity_no_permissions = 0x7f0d0042;
+        public static final int crop_image_activity_title = 0x7f0d0043;
+        public static final int crop_image_menu_crop = 0x7f0d0044;
+        public static final int crop_image_menu_flip = 0x7f0d0045;
+        public static final int crop_image_menu_flip_horizontally = 0x7f0d0046;
+        public static final int crop_image_menu_flip_vertically = 0x7f0d0047;
+        public static final int crop_image_menu_rotate_left = 0x7f0d0048;
+        public static final int crop_image_menu_rotate_right = 0x7f0d0049;
+        public static final int pick_image_intent_chooser_title = 0x7f0d005c;
+        public static final int search_menu_title = 0x7f0d0061;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0063;
     }
     public static final class style {
         private style() {}

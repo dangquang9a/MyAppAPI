@@ -60,17 +60,16 @@
                     android:hint="@string/date"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Spinner
+            <Spinner
                     android:id="@+id/spnLocation"
                     android:layout_width="match_parent"
                     android:layout_height="50dp" />
-            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spnLocation2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
 
         </LinearLayout>
 
@@ -87,6 +86,11 @@
                 android:layout_height="200dp"
                 android:orientation="vertical"
                 android:padding="5dp">
+
+                <View
+                    android:id="@+id/vCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
                 <ImageView
                     android:id="@+id/imagevCalendar"

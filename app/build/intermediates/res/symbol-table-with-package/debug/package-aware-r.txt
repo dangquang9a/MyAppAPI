@@ -1332,6 +1332,7 @@ id snapMargins
 id spacer
 id split_action_bar
 id spnLocation
+id spnLocation2
 id spread
 id spread_inside
 id src_atop
@@ -1374,6 +1375,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vCalendar
 id view_offset_helper
 id visible
 id wide
@@ -1516,7 +1518,6 @@ string appbar_scrolling_view_behavior
 string appname
 string bottom_sheet_behavior
 string calendar
-string cancel
 string character_counter_content_description
 string character_counter_pattern
 string common_google_play_services_enable_button
@@ -1575,6 +1576,9 @@ string send
 string status_bar_notification_info_overflow
 string support
 string take_photo
+string textday
+string textname
+string texttime
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
