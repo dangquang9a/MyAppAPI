@@ -1330,11 +1330,9 @@ id snapMargins
 id spacer
 id split_action_bar
 id spnDate
-id spnEmail
 id spnLocation
 id spnLocation2
 id spnName
-id spnPhone
 id spnTime
 id spread
 id spread_inside

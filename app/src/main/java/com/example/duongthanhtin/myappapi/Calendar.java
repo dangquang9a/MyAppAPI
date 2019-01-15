@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.provider.CalendarContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -43,12 +44,9 @@ public class Calendar extends  AppCompatActivity {
     String resultText;
     ImageView previewIv;
     View previewIMG;
-    Button btnOption, btnRescan, btnSave, btnCreate;
-    Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerEmail, spinnerPhone, spinnerTime, spinnerDate;
+    Button  btnCreat, btnCancel, btnScan;
+    Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerTime, spinnerDate;
     java.util.Calendar calendar;
-    private int mYear, mMonth, mHour, mMinute, mDay;
-    private String mTime;
-    private String mDate;
     public static final int CAMERA_REQUEST_CODE = 200;
     public static final int STORAGE_REQUEST_CODE = 400;
     public static final int IMAGE_PICK_GALLERY_CODE = 1000;
@@ -70,11 +68,11 @@ public class Calendar extends  AppCompatActivity {
         spinnerLocation = findViewById(R.id.spnLocation);
         spinnerLocation2 = findViewById(R.id.spnLocation2);
         spinnerName=findViewById(R.id.spnName);
-        spinnerEmail=findViewById(R.id.spnEmail);
-        spinnerPhone=findViewById(R.id.spnPhone);
         spinnerDate=findViewById(R.id.spnDate);
         spinnerTime=findViewById(R.id.spnTime);
-        btnCreate=findViewById(R.id.idBtnRescanCalendar);
+        btnScan=findViewById(R.id.idBtnRescanCalendar);
+        btnCreat=findViewById(R.id.idBtnCreateEvent);
+
         resultText = "";
 
 
@@ -92,10 +90,29 @@ public class Calendar extends  AppCompatActivity {
                 showImageImportDialog();
             }
         });
-        btnCreate.setOnClickListener(new View.OnClickListener() {
+        btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 previewIMG.callOnClick();
+            }
+        });
+        btnCreat.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                final String strName = spinnerName.getSelectedItem().toString();
+                final String strContent = spinnerLocation.getSelectedItem().toString();
+
+                if(strName.equals("") || strContent.equals(""))
+                {
+                    Toast.makeText(Calendar.this,"Please select a valid feild",Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent calIntent = new Intent(Intent.ACTION_INSERT);
+                    calIntent.setType("vnd.android.cursor.item/event");
+                    calIntent.putExtra(CalendarContract.Events.TITLE, spinnerName.getSelectedItem().toString());
+                    calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, spinnerLocation.getSelectedItem().toString()+" " +spinnerLocation2.getSelectedItem().toString());
+                    startActivity(calIntent);
+                }
             }
         });
     }
@@ -231,6 +248,7 @@ public class Calendar extends  AppCompatActivity {
                     textAnalyzer.analyze();
                     CardInformation cardInformation = textAnalyzer.getCardInformation();
                     Log.d("My app","Card Info: "+cardInformation.getAddresses());
+                    //Log.d("My app","Dates: "+cardInformation.getDates());
                     //case 1: arrlist=cardInformation.getAddresses(); //Location
                     //case 2: arrlist=cardInformation.getEmails(); //Email
                     //case 3: arrlist=cardInformation.getEventNames(); //Event Name
@@ -240,10 +258,8 @@ public class Calendar extends  AppCompatActivity {
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
                     PutDataInSpinner(cardInformation, spinnerName, 3);
-                    PutDataInSpinner(cardInformation, spinnerEmail, 2);
-                    PutDataInSpinner(cardInformation, spinnerPhone, 4);
-                    PutDataInSpinner(cardInformation, spinnerTime,5);
-                    PutDataInSpinner(cardInformation, spinnerDate,5);
+                    //PutDataInSpinner(cardInformation, spinnerTime,5);
+                    //PutDataInSpinner(cardInformation, spinnerDate,5);
 
                     //etName.setText(String.valueOf(cardInformation.getEventNames().get(1)));
                     //etContact.setText(String.valueOf(cardInformation.getEmails().get(1)));
