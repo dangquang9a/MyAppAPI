@@ -24,6 +24,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -45,6 +46,7 @@ public class Calendar extends  AppCompatActivity {
     ImageView previewIv;
     View previewIMG;
     Button  btnCreat, btnCancel, btnScan;
+    ImageButton btnEditSpinnerName;
     Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerTime, spinnerDate;
     java.util.Calendar calendar;
     public static final int CAMERA_REQUEST_CODE = 200;
@@ -72,6 +74,7 @@ public class Calendar extends  AppCompatActivity {
         spinnerTime=findViewById(R.id.spnTime);
         btnScan=findViewById(R.id.idBtnRescanCalendar);
         btnCreat=findViewById(R.id.idBtnCreateEvent);
+        btnEditSpinnerName=findViewById(R.id.editName);
 
         resultText = "";
 
@@ -90,6 +93,14 @@ public class Calendar extends  AppCompatActivity {
                 showImageImportDialog();
             }
         });
+        btnEditSpinnerName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i;
+                i = new Intent(Calendar.this,EditSpinner.class);
+                startActivity(i);
+            }
+        });
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -105,7 +116,7 @@ public class Calendar extends  AppCompatActivity {
 
                 if(strName.equals("") || strContent.equals(""))
                 {
-                    Toast.makeText(Calendar.this,"Please select a valid feild",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Calendar.this,"Please select a valid field",Toast.LENGTH_SHORT).show();
                 } else {
                     Intent calIntent = new Intent(Intent.ACTION_INSERT);
                     calIntent.setType("vnd.android.cursor.item/event");

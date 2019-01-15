@@ -36,6 +36,8 @@
         <activity android:name="com.example.duongthanhtin.myappapi.History" />
         <activity android:name="com.example.duongthanhtin.myappapi.Calendar" />
         <activity android:name="com.example.duongthanhtin.myappapi.InterfaceRow" />
+        <activity android:name="com.example.duongthanhtin.myappapi.EditSpinner" >
+        </activity>
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

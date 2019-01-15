@@ -16,37 +16,85 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            android:layout_marginRight="10dp"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
 
-            <Spinner
-                android:id="@+id/spnName"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spnName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
 
 
-            <Spinner
-                android:id="@+id/spnDate"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                <Spinner
+                    android:id="@+id/spnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
 
-            <Spinner
-                android:id="@+id/spnTime"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                <Spinner
+                    android:id="@+id/spnTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
 
-            <Spinner
-                android:id="@+id/spnLocation"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                <Spinner
+                    android:id="@+id/spnLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
 
-            <Spinner
-                android:id="@+id/spnLocation2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                <Spinner
+                    android:id="@+id/spnLocation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
 
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/editName"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/edit" />
+
+                <ImageButton
+                    android:id="@+id/editDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/edit" />
+
+                <ImageButton
+                    android:id="@+id/editTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/edit" />
+
+                <ImageButton
+                    android:id="@+id/editLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/edit" />
+
+                <ImageButton
+                    android:id="@+id/editLocation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/edit" />
+            </LinearLayout>
 
         </LinearLayout>
 

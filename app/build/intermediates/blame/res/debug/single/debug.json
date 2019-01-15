@@ -548,6 +548,10 @@
         "source": "/Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/236e501532131322c5d07fe69a110497/res/drawable-hdpi-v4/googleg_standard_color_18.png"
     },
     {
+        "merged": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/build/intermediates/res/merged/debug/layout_activity_edit_spinner_item.xml.flat",
+        "source": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/res/layout/activity_edit_spinner_item.xml"
+    },
+    {
         "merged": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bee13424b4c4e94abc22b99971068124/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
@@ -1918,6 +1922,10 @@
     {
         "merged": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "/Users/dangquang9a/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/021702288573981e08d9a1884eea5d5c/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/build/intermediates/res/merged/debug/drawable_edit.png.flat",
+        "source": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/res/drawable/edit.png"
     },
     {
         "merged": "/Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
