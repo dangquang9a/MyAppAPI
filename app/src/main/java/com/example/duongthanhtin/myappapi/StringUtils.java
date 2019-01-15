@@ -30,27 +30,5 @@ public class StringUtils {
         return pattern.matcher(temp).replaceAll("").replace('đ','d').replace('Đ','D');
     }
 
-    public static boolean isValidDay(int day, int month, int year) {
-        if (month < 0 || month > 12)    return false;
-        if (day < 0 || day > 31)        return false;
 
-        if (month == 2) {
-            // Leap year
-            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
-                if (day > 29)
-                    return false;
-            } else {
-                if (day > 28)
-                    return false;
-            }
-        }
-
-        if (month == 2 || month == 4 || month == 6 ||
-                month == 9 || month == 11) {
-            if (day == 31)
-                return false;
-        }
-
-        return true;
-    }
 }

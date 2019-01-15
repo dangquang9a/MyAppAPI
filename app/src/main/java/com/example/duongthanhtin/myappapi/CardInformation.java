@@ -2,7 +2,6 @@ package com.example.duongthanhtin.myappapi;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 
 public class CardInformation {
     public CardInformation() {
@@ -10,16 +9,16 @@ public class CardInformation {
         this.emails = new ArrayList<String>();
         this.phoneNumbers = new ArrayList<String>();
         this.eventNames = new ArrayList<String>();
-        this.times = new ArrayList<Date>();
-        this.dates = new ArrayList<Date>();
+        this.times = new ArrayList<MyDateTime>();
+        this.dates = new ArrayList<MyDateTime>();
     }
 
     private ArrayList<String> eventNames;
     private ArrayList<String> phoneNumbers;
     private ArrayList<String> emails;
     private ArrayList<String> addresses;
-    private ArrayList<Date> times;
-    private ArrayList<Date> dates;
+    private ArrayList<MyDateTime> times;
+    private ArrayList<MyDateTime> dates;
 
     public ArrayList<String> getEventNames() {
         return eventNames;
@@ -69,27 +68,27 @@ public class CardInformation {
         this.addresses.add(address);
     }
 
-    public ArrayList<Date> getTimes() {
+    public ArrayList<MyDateTime> getTimes() {
         return times;
     }
 
-    public void setTimes(ArrayList<Date> times) {
+    public void setTimes(ArrayList<MyDateTime> times) {
         this.times = times;
     }
 
-    public void addTime(Date time){
+    public void addTime(MyDateTime time){
         this.times.add(time);
     }
 
-    public ArrayList<Date> getDates() {
+    public ArrayList<MyDateTime> getDates() {
         return dates;
     }
 
-    public void setDates(ArrayList<Date> dates) {
+    public void setDates(ArrayList<MyDateTime> dates) {
         this.dates = dates;
     }
 
-    public void addDate(Date date){
+    public void addDate(MyDateTime date){
         this.dates.add(date);
     }
 }

@@ -269,8 +269,8 @@ public class Calendar extends  AppCompatActivity {
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
                     PutDataInSpinner(cardInformation, spinnerName, 3);
-                    //PutDataInSpinner(cardInformation, spinnerTime,5);
-                    //PutDataInSpinner(cardInformation, spinnerDate,5);
+                    PutDataInSpinner(cardInformation, spinnerTime,5);
+                    PutDataInSpinner(cardInformation, spinnerDate,5);
 
                     //etName.setText(String.valueOf(cardInformation.getEventNames().get(1)));
                     //etContact.setText(String.valueOf(cardInformation.getEmails().get(1)));
@@ -327,7 +327,7 @@ public class Calendar extends  AppCompatActivity {
     //ArrayAdapter
     private void PutDataInSpinner(CardInformation cardInformation, Spinner spinner, int typeofdata) {
 
-        List<Date> arrlisttime = new ArrayList<>();
+        List<MyDateTime> arrlisttime = new ArrayList<>();
         List<String> arrlist = new ArrayList<>();
         ArrayAdapter<String> adapter;
 

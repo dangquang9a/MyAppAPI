@@ -173,17 +173,10 @@ public class CreditMoney extends AppCompatActivity  {
                     );
                     //Call
                     String number1 = new String("*100*");
-                    String number2 = new String("#");
                     String number = ResultEt.getText().toString();
                     String txtCode="#";
-                    String encodedHash = Uri.encode("#");
-                    txtCode = number1+number+encodedHash;
-                   // Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel: " + number1 + number + number2));
-                    Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel: "+txtCode));
-                    callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(callIntent);
-
-
+                    txtCode = number1+number+txtCode;
+                    startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", txtCode, null)));
 
                 }
             }

@@ -4,7 +4,6 @@ import android.text.TextUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 
 public class TextAnalyzer {
     public TextAnalyzer(String text) {
@@ -44,7 +43,7 @@ public class TextAnalyzer {
     {
         int lineAttribute = 0;
 
-        ArrayList<String> strings = new ArrayList<String>(Arrays.asList(line.split(" ")));
+        ArrayList<String> strings = new ArrayList<>(Arrays.asList(line.split(" ")));
         for (String string : strings) {
             // Check if this is phone number
             if (isPhoneNumber(string)) {
@@ -59,14 +58,14 @@ public class TextAnalyzer {
             }
 
             // Check if this is time
-            Date time = new Date();
+            MyDateTime time = new MyDateTime();
             if (isTime(string, time)) {
                 cardInfo.addTime(time);
                 lineAttribute |= LINE_ATTRIBUTE_TIME;
             }
 
             // Check if this is date
-            Date date = new Date();
+            MyDateTime date = new MyDateTime();
             if (isDate(string, date)) {
                 cardInfo.addDate(date);
                 lineAttribute |= LINE_ATTRIBUTE_DATE;
@@ -76,7 +75,7 @@ public class TextAnalyzer {
         return lineAttribute;
     }
 
-    public boolean isDate(String string, Date date) {
+    public boolean isDate(String string, MyDateTime date) {
         string = string.toUpperCase();
         string = StringUtils.removeAccent(string);
         ArrayList<String> numbers = new ArrayList<>();
@@ -103,21 +102,17 @@ public class TextAnalyzer {
             // get year
             int year = Integer.parseInt(numbers.get(2));
 
-            // checking
-            if (StringUtils.isValidDay(day, month, year) == false)
+            // set and check
+            date.setDate(day, month, year);
+            if (date.isValidDay() == false)
                 return false;
-
-            // return date
-            date.setYear(year);
-            date.setMonth(month);
-            date.setDate(day);
         }
         else return false;
 
         return true;
     }
 
-    public boolean isTime(String string, Date time){
+    public boolean isTime(String string, MyDateTime time){
         string = string.toUpperCase();
         ArrayList<String> numbers = new ArrayList<>();
         //if (StringUtils.countMatchedChar(string, ':') == 1){
@@ -142,19 +137,19 @@ public class TextAnalyzer {
                     return false;
 
             // get hour
-            int hour = Integer.parseInt(numbers.get(0));
-            if (hour < 0 || hour > 24) return false;
+            int hour = -1;
+            hour = Integer.parseInt(numbers.get(0));
 
             // get minute
             int minute = 0;
             if (numbers.size() > 1) {
                 minute = Integer.parseInt(numbers.get(1));
-                if (minute < 0 || minute > 60)  return false;
             }
 
-            // return time
-            time.setHours(hour);
-            time.setMinutes(minute);
+            // set & check
+            time.setTime(hour, minute, 0);
+            if (time.isValidTime() == false)
+                return false;
         }
         else return false;
         return false;
