@@ -14,11 +14,9 @@ public class TextAnalyzer {
     private CardInformation cardInfo = new CardInformation();
 
     static int LINE_ATTRIBUTE_NAME = 1;
-    static int LINE_ATTRIBUTE_PHONE = 2;
-    static int LINE_ATTRIBUTE_ADRESS = 4;
-    static int LINE_ATTRIBUTE_EMAIL = 8;
-    static int LINE_ATTRIBUTE_TIME = 16;
-    static int LINE_ATTRIBUTE_DATE = 32;
+    static int LINE_ATTRIBUTE_ADRESS = 2;
+    static int LINE_ATTRIBUTE_TIME = 4;
+    static int LINE_ATTRIBUTE_DATE = 8;
 
     public CardInformation getCardInformation() { return this.cardInfo; }
 
@@ -27,11 +25,19 @@ public class TextAnalyzer {
         for (String line : lines) {
             int lineAttribute = analyzeLine(line);
 
+            // Checking if line contains the date
+            MyDateTime date = new MyDateTime();
+            if (!checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_TIME) &&
+                    !checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_DATE)) {
+                if (checkIfContainDate(line, date)) {
+                    lineAttribute |= LINE_ATTRIBUTE_DATE;
+                    cardInfo.addDate(date);
+                }
+            }
+
             // Checking the line attribute to find the name/address
-            if (!checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_PHONE) &&
-                    !checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_PHONE) &&
-                    !checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_PHONE) &&
-                    !checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_PHONE)) {
+            if (!checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_TIME) &&
+                    !checkLineAttribute(lineAttribute, LINE_ATTRIBUTE_DATE)) {
                 // This is line containing address or name of the event
                 cardInfo.addEventName(line);
                 cardInfo.addAddress(line);
@@ -45,17 +51,6 @@ public class TextAnalyzer {
 
         ArrayList<String> strings = new ArrayList<>(Arrays.asList(line.split(" ")));
         for (String string : strings) {
-            // Check if this is phone number
-            if (isPhoneNumber(string)) {
-                cardInfo.addPhoneNumber(string);
-                lineAttribute |= LINE_ATTRIBUTE_PHONE;
-            }
-
-            // Check if this is email
-            if (isEmail(string)){
-                cardInfo.addEmail(string);
-                lineAttribute |= LINE_ATTRIBUTE_EMAIL;
-            }
 
             // Check if this is time
             MyDateTime time = new MyDateTime();
@@ -152,28 +147,75 @@ public class TextAnalyzer {
                 return false;
         }
         else return false;
-        return false;
-    }
-
-    public boolean isEmail(String string) {
-        string = string.toUpperCase();
-        boolean result = false;
-        if (string.contains("@") && string.contains("."))
-            result = true;
-
-        return result;
-    }
-
-    public boolean isPhoneNumber(String string) {
-        string = string.toUpperCase();
-        boolean result = false;
-        if (TextUtils.isDigitsOnly(string))
-            result = true;
-
-        return result;
+        return true;
     }
 
     public boolean checkLineAttribute(int lineAttribute, int attribute) {
         return ((lineAttribute & attribute) == attribute);
+    }
+
+    public boolean checkIfContainDate(String line, MyDateTime date) {
+        line = line.toUpperCase();
+        line = StringUtils.removeAccent(line);
+        int year = -1, month = -1, day = -1;
+
+        // Test 1:
+        if (line.contains("JAN")) month = 1;
+        else if (line.contains("FEB")) month = 2;
+        else if (line.contains("MAR")) month = 3;
+        else if (line.contains("APR")) month = 4;
+        else if (line.contains("MAY")) month = 5;
+        else if (line.contains("JUN")) month = 6;
+        else if (line.contains("JUL")) month = 7;
+        else if (line.contains("AUG")) month = 8;
+        else if (line.contains("SEP")) month = 9;
+        else if (line.contains("OCT")) month = 10;
+        else if (line.contains("NOV")) month = 11;
+        else if (line.contains("DEC")) month = 12;
+
+        else if (line.contains("THANG") && line.contains("MOT")) month = 1;
+        else if (line.contains("THANG") && line.contains("GIENG")) month = 1;
+        else if (line.contains("THANG") && line.contains("HAI")) month = 2;
+        else if (line.contains("THANG") && line.contains("BA")) month = 3;
+        else if (line.contains("THANG") && line.contains("BON")) month = 4;
+        else if (line.contains("THANG") && line.contains("NAM")) month = 5;
+        else if (line.contains("THANG") && line.contains("SAU")) month = 6;
+        else if (line.contains("THANG") && line.contains("BAY")) month = 7;
+        else if (line.contains("THANG") && line.contains("TAM")) month = 8;
+        else if (line.contains("THANG") && line.contains("CHIN")) month = 9;
+        else if (line.contains("THANG") && line.contains("MUOI")) month = 10;
+        else if (line.contains("THANG") && line.contains("MUOI MOT")) month = 11;
+        else if (line.contains("THANG") && line.contains("HAI")) month = 12;
+        else
+            return false;
+
+
+        // Test 2
+        ArrayList<String> strings = new ArrayList<>(Arrays.asList(TextUtils.split(line, " ")));
+        for (String string : strings) {
+            // remove character ';', ','
+            if (string.charAt(0) == ';' ||
+                    string.charAt(0) == ',')
+                string = string.substring(1);
+            if (string.charAt(string.length() -1) == ',' ||
+                    string.charAt(string.length() - 1) == ';')
+                string = string.substring(0, string.length() - 1);
+
+            // check
+            if (TextUtils.isDigitsOnly(string)) {
+                int number = Integer.parseInt(string);
+
+                // Check if a possible valid day
+                if (number > 31) {
+                    year = number;
+                }
+                else if (number > 0) {
+                    day = number;
+                }
+            }
+        }
+
+        date.setDate(day, month, year);
+        return date.isValidDay();
     }
 }

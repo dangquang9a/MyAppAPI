@@ -269,7 +269,7 @@ public class Calendar extends  AppCompatActivity {
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
                     PutDataInSpinner(cardInformation, spinnerName, 3);
-                    PutDataInSpinner(cardInformation, spinnerTime,5);
+                    PutDataInSpinner(cardInformation, spinnerTime,4);
                     PutDataInSpinner(cardInformation, spinnerDate,5);
 
                     //etName.setText(String.valueOf(cardInformation.getEventNames().get(1)));
@@ -338,7 +338,7 @@ public class Calendar extends  AppCompatActivity {
                 break;
             }
             case 2: {
-                arrlist = cardInformation.getEmails(); //Email
+                //arrlist = cardInformation.getEmails(); //Email
                 break;
             }
             case 3: {
@@ -346,19 +346,36 @@ public class Calendar extends  AppCompatActivity {
                 break;
             }
             case 4: {
-                arrlist = cardInformation.getPhoneNumbers(); //Phone Numbers
+                List<MyDateTime> allObjects =cardInformation.getTimes(); //Times
+                arrlist.clear();
+                for (MyDateTime object : allObjects)
+                    if (object.isValidTime())
+                        arrlisttime.add(object);
+
+                if (arrlisttime.size() == 0)
+                    arrlisttime.add(new MyDateTime());
                 break;
 
             }
             case 5: {
-                arrlisttime=cardInformation.getDates(); //Dates
+                //arrlisttime=cardInformation.getDates(); //Dates
+                List<MyDateTime> allObjects =cardInformation.getDates(); //Dates
+                arrlist.clear();
+                for (MyDateTime object : allObjects)
+                    if (object.isValidDay())
+                        arrlisttime.add(object);
+
+                if (arrlisttime.size() == 0)
+                    arrlisttime.add(new MyDateTime());
+                break;
             }
 
         }
 
-        if (typeofdata==5) {
+        if (typeofdata==5 || typeofdata==4) {
             adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, arrlisttime);
-        } else {
+        }
+        else {
             adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, arrlist);
         }
 
