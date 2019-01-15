@@ -45,8 +45,9 @@ public class Calendar extends  AppCompatActivity {
     String resultText;
     ImageView previewIv;
     View previewIMG;
+
     Button  btnCreat, btnCancel, btnScan;
-    ImageButton btnEditSpinnerName;
+    ImageButton btnEditSpinnerName, btnEditLocation1, btnEditLocation2;
     Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerTime, spinnerDate;
     java.util.Calendar calendar;
     public static final int CAMERA_REQUEST_CODE = 200;
@@ -75,6 +76,9 @@ public class Calendar extends  AppCompatActivity {
         btnScan=findViewById(R.id.idBtnRescanCalendar);
         btnCreat=findViewById(R.id.idBtnCreateEvent);
         btnEditSpinnerName=findViewById(R.id.editName);
+        btnEditLocation1=findViewById(R.id.editLocation);
+        btnEditLocation2=findViewById(R.id.editLocation2);
+
 
         resultText = "";
 
@@ -96,11 +100,95 @@ public class Calendar extends  AppCompatActivity {
         btnEditSpinnerName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent i;
-                i = new Intent(Calendar.this,EditSpinner.class);
-                startActivity(i);
+
+                final EditText editTextName = new EditText(Calendar.this);
+                editTextName.setText(spinnerName.getSelectedItem().toString());
+                final ArrayList<String> arrEditText = new ArrayList<>();
+
+                new AlertDialog.Builder(Calendar.this)
+                        .setTitle("Change Name")
+                        .setView(editTextName)
+
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        })
+                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
+                            CardInformation cardInformation = new CardInformation();
+                            @Override
+
+                            public void onClick(DialogInterface dialog, int which) {
+                            arrEditText.add(editTextName.getText().toString());
+                            cardInformation.setEventNames(arrEditText);
+                            PutDataInSpinner(cardInformation,spinnerName,3);
+                            }
+                        })
+                        .show();
             }
         });
+//        btnEditLocation1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v){
+//
+//                final EditText editTextLoc1 = new EditText(Calendar.this);
+//                editTextLoc1.setText(spinnerLocation.getSelectedItem().toString());
+//                final ArrayList<String> arrEditText = new ArrayList<>();
+//
+//                new AlertDialog.Builder(Calendar.this)
+//                        .setTitle("Change Location")
+//                        .setView(editTextLoc1)
+//
+//                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                            }
+//                        })
+//                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
+//                            CardInformation cardInformation = new CardInformation();
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//
+//                                arrEditText.add(editTextLoc1.getText().toString());
+//                                cardInformation.setAddresses(arrEditText);
+//                                PutDataInSpinner(cardInformation,spinnerLocation,3);
+//                            }
+//                        })
+//                        .show();
+//            }
+//        });
+//        btnEditLocation2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v){
+//
+//                final EditText editTextLoc2 = new EditText(Calendar.this);
+//                editTextLoc2.setText(spinnerLocation2.getSelectedItem().toString());
+//                final ArrayList<String> arrEditText = new ArrayList<>();
+//
+//                new AlertDialog.Builder(Calendar.this)
+//                        .setTitle("Change Location")
+//                        .setView(editTextLoc2)
+//
+//                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                            }
+//                        })
+//                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
+//                            CardInformation cardInformation = new CardInformation();
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                arrEditText.add(editTextLoc2.getText().toString());
+//                                cardInformation.setAddresses(arrEditText);
+//                                PutDataInSpinner(cardInformation,spinnerLocation2,3);
+//                            }
+//                        })
+//                        .show();
+//            }
+//        });
+
+
+
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -254,17 +342,20 @@ public class Calendar extends  AppCompatActivity {
                     //TODO: Analyze the text by TextAnalyzer
                     //TODO: Set all the element of CardInformation into combox ( should use
                     //TODO: a method to bundle the process).
+                    CardInformation cardInformation = new CardInformation();
                     TextAnalyzer textAnalyzer = new TextAnalyzer(resultText);
-                    Log.d("My app","resultText: "+resultText);
                     textAnalyzer.analyze();
-                    CardInformation cardInformation = textAnalyzer.getCardInformation();
-                    Log.d("My app","Card Info: "+cardInformation.getAddresses());
+                    cardInformation = textAnalyzer.getCardInformation();
+
+
                     //Log.d("My app","Dates: "+cardInformation.getDates());
+
+
                     //case 1: arrlist=cardInformation.getAddresses(); //Location
                     //case 2: arrlist=cardInformation.getEmails(); //Email
                     //case 3: arrlist=cardInformation.getEventNames(); //Event Name
                     //case 4: arrlist=cardInformation.getPhoneNumbers(); //Phone Numbers
-                    //ase 5: arrlist=cardInformation.getDates().toArray(); //Dates and Times
+                    //case 5: arrlist=cardInformation.getDates().toArray(); //Dates and Times
 
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
@@ -313,7 +404,6 @@ public class Calendar extends  AppCompatActivity {
                 break;
         }
     }
-
     //Image
     public byte[] ImageView_To_Byte(Uri image_uri) {
         BitmapDrawable drawable = (BitmapDrawable) previewIv.getDrawable();
@@ -392,6 +482,16 @@ public class Calendar extends  AppCompatActivity {
 
             }
         });
+    }
+    //Get spinner index
+    private int getIndex(Spinner spinner, String myString){
+        for (int i=0;i<spinner.getCount();i++){
+            if (spinner.getItemAtPosition(i).toString().equalsIgnoreCase(myString)){
+                return i;
+            }
+        }
+
+        return 0;
     }
 }
 
