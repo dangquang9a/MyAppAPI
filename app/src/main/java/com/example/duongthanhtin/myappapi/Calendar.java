@@ -34,14 +34,16 @@ import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.ByteArrayOutputStream;
+import java.sql.Time;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Calendar extends  AppCompatActivity {
     String resultText;
     ImageView previewIv;
     View previewIMG;
-    Button btnOption, btnRescan, btnSave;
+    Button btnOption, btnRescan, btnSave, btnCreate;
     Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerEmail, spinnerPhone, spinnerTime, spinnerDate;
     java.util.Calendar calendar;
     private int mYear, mMonth, mHour, mMinute, mDay;
@@ -72,6 +74,7 @@ public class Calendar extends  AppCompatActivity {
         spinnerPhone=findViewById(R.id.spnPhone);
         spinnerDate=findViewById(R.id.spnDate);
         spinnerTime=findViewById(R.id.spnTime);
+        btnCreate=findViewById(R.id.idBtnRescanCalendar);
         resultText = "";
 
 
@@ -87,6 +90,12 @@ public class Calendar extends  AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showImageImportDialog();
+            }
+        });
+        btnCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                previewIMG.callOnClick();
             }
         });
     }
@@ -222,17 +231,19 @@ public class Calendar extends  AppCompatActivity {
                     textAnalyzer.analyze();
                     CardInformation cardInformation = textAnalyzer.getCardInformation();
                     Log.d("My app","Card Info: "+cardInformation.getAddresses());
-//                    case 1: arrlist=cardInformation.getAddresses(); //Location
-//                    case 2: arrlist=cardInformation.getEmails(); //Email
-//                    case 3: arrlist=cardInformation.getEventNames(); //Event Name
-//                    case 4: arrlist=cardInformation.getPhoneNumbers(); //Phone Numbers
-//                  //case 5: arrlist=cardInformation.getDates().toArray(); //Dates
+                    //case 1: arrlist=cardInformation.getAddresses(); //Location
+                    //case 2: arrlist=cardInformation.getEmails(); //Email
+                    //case 3: arrlist=cardInformation.getEventNames(); //Event Name
+                    //case 4: arrlist=cardInformation.getPhoneNumbers(); //Phone Numbers
+                    //ase 5: arrlist=cardInformation.getDates().toArray(); //Dates and Times
 
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
                     PutDataInSpinner(cardInformation, spinnerName, 3);
                     PutDataInSpinner(cardInformation, spinnerEmail, 2);
                     PutDataInSpinner(cardInformation, spinnerPhone, 4);
+                    PutDataInSpinner(cardInformation, spinnerTime,5);
+                    PutDataInSpinner(cardInformation, spinnerDate,5);
 
                     //etName.setText(String.valueOf(cardInformation.getEventNames().get(1)));
                     //etContact.setText(String.valueOf(cardInformation.getEmails().get(1)));
@@ -288,9 +299,14 @@ public class Calendar extends  AppCompatActivity {
 
     //ArrayAdapter
     private void PutDataInSpinner(CardInformation cardInformation, Spinner spinner, int typeofdata) {
+
+        List<Date> arrlisttime = new ArrayList<>();
         List<String> arrlist = new ArrayList<>();
+        ArrayAdapter<String> adapter;
+
         switch (typeofdata) {
             case 1: {
+
                 arrlist = cardInformation.getAddresses(); //Location
                 break;
             }
@@ -305,19 +321,26 @@ public class Calendar extends  AppCompatActivity {
             case 4: {
                 arrlist = cardInformation.getPhoneNumbers(); //Phone Numbers
                 break;
-                //case 5: arrlist=cardInformation.getDates().toArray(); //Dates
+
+            }
+            case 5: {
+                arrlisttime=cardInformation.getDates(); //Dates
             }
 
         }
 
+        if (typeofdata==5) {
+            adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, arrlisttime);
+        } else {
+            adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, arrlist);
+        }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, arrlist);
         adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(Calendar.this, spinnerLocation.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
