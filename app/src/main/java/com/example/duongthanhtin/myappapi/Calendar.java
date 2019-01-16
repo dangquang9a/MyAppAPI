@@ -47,7 +47,7 @@ public class Calendar extends  AppCompatActivity {
     View previewIMG;
 
     Button  btnCreat, btnCancel, btnScan;
-    ImageButton btnEditSpinnerName, btnEditLocation1, btnEditLocation2;
+    ImageButton btnEditSpinnerName, btnEditLocation1, btnEditLocation2, btnEditDate, btnEditTime;
     Spinner spinnerLocation, spinnerLocation2, spinnerName, spinnerTime, spinnerDate;
     java.util.Calendar calendar;
     public static final int CAMERA_REQUEST_CODE = 200;
@@ -78,6 +78,8 @@ public class Calendar extends  AppCompatActivity {
         btnEditSpinnerName=findViewById(R.id.editName);
         btnEditLocation1=findViewById(R.id.editLocation);
         btnEditLocation2=findViewById(R.id.editLocation2);
+        btnEditDate=findViewById(R.id.editDate);
+        btnEditTime=findViewById(R.id.editTime);
 
 
         resultText = "";
@@ -115,49 +117,121 @@ public class Calendar extends  AppCompatActivity {
                             }
                         })
                         .setPositiveButton("Change", new DialogInterface.OnClickListener() {
-                            CardInformation cardInformation = new CardInformation();
                             @Override
 
                             public void onClick(DialogInterface dialog, int which) {
                             arrEditText.add(editTextName.getText().toString());
-                            cardInformation.setEventNames(arrEditText);
-                            PutDataInSpinner(cardInformation,spinnerName,3);
+
+                                ArrayAdapter<String> adapterName = new ArrayAdapter(Calendar.this, android.R.layout.simple_spinner_item,arrEditText);
+                                adapterName.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
+                                spinnerName.setAdapter(adapterName);
+                                spinnerName.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                    @Override
+                                    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                                    }
+
+                                    @Override
+                                    public void onNothingSelected(AdapterView<?> adapterView) {
+
+                                    }
+                                });
+
+
                             }
                         })
                         .show();
             }
         });
-//        btnEditLocation1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v){
-//
-//                final EditText editTextLoc1 = new EditText(Calendar.this);
-//                editTextLoc1.setText(spinnerLocation.getSelectedItem().toString());
-//                final ArrayList<String> arrEditText = new ArrayList<>();
-//
-//                new AlertDialog.Builder(Calendar.this)
-//                        .setTitle("Change Location")
-//                        .setView(editTextLoc1)
-//
-//                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                            }
-//                        })
-//                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
-//                            CardInformation cardInformation = new CardInformation();
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//
-//                                arrEditText.add(editTextLoc1.getText().toString());
-//                                cardInformation.setAddresses(arrEditText);
-//                                PutDataInSpinner(cardInformation,spinnerLocation,3);
-//                            }
-//                        })
-//                        .show();
-//            }
-//        });
-//        btnEditLocation2.setOnClickListener(new View.OnClickListener() {
+        btnEditLocation1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+
+                final EditText editTextLoc = new EditText(Calendar.this);
+                editTextLoc.setText(spinnerLocation.getSelectedItem().toString());
+                final ArrayList<String> arrEditText = new ArrayList<>();
+
+                new AlertDialog.Builder(Calendar.this)
+                        .setTitle("Change Location")
+                        .setView(editTextLoc)
+
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        })
+                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
+                            @Override
+
+                            public void onClick(DialogInterface dialog, int which) {
+                                arrEditText.add(editTextLoc.getText().toString());
+
+                                ArrayAdapter<String> adapterLoc1 = new ArrayAdapter(Calendar.this, android.R.layout.simple_spinner_item,arrEditText);
+                                adapterLoc1.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
+                                spinnerLocation.setAdapter(adapterLoc1);
+                                spinnerLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                    @Override
+                                    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                                    }
+
+                                    @Override
+                                    public void onNothingSelected(AdapterView<?> adapterView) {
+
+                                    }
+                                });
+
+
+                            }
+                        })
+                        .show();
+            }
+        });
+        btnEditLocation2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+
+                final EditText editTextLoc2 = new EditText(Calendar.this);
+                editTextLoc2.setText(spinnerLocation2.getSelectedItem().toString());
+                final ArrayList<String> arrEditText = new ArrayList<>();
+
+                new AlertDialog.Builder(Calendar.this)
+                        .setTitle("Change Location")
+                        .setView(editTextLoc2)
+
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        })
+                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
+                            @Override
+
+                            public void onClick(DialogInterface dialog, int which) {
+                                arrEditText.add(editTextLoc2.getText().toString());
+
+                                ArrayAdapter<String> adapterLoc2 = new ArrayAdapter(Calendar.this, android.R.layout.simple_spinner_item,arrEditText);
+                                adapterLoc2.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
+                                spinnerLocation2.setAdapter(adapterLoc2);
+                                spinnerLocation2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                    @Override
+                                    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                                    }
+
+                                    @Override
+                                    public void onNothingSelected(AdapterView<?> adapterView) {
+
+                                    }
+                                });
+
+
+                            }
+                        })
+                        .show();
+            }
+        });
+//        btnEditDate.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v){
 //
@@ -175,12 +249,27 @@ public class Calendar extends  AppCompatActivity {
 //                            }
 //                        })
 //                        .setPositiveButton("Change", new DialogInterface.OnClickListener() {
-//                            CardInformation cardInformation = new CardInformation();
 //                            @Override
+//
 //                            public void onClick(DialogInterface dialog, int which) {
 //                                arrEditText.add(editTextLoc2.getText().toString());
-//                                cardInformation.setAddresses(arrEditText);
-//                                PutDataInSpinner(cardInformation,spinnerLocation2,3);
+//
+//                                ArrayAdapter<String> adapterLoc2 = new ArrayAdapter(Calendar.this, android.R.layout.simple_spinner_item,arrEditText);
+//                                adapterLoc2.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
+//                                spinnerLocation2.setAdapter(adapterLoc2);
+//                                spinnerLocation2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                                    @Override
+//                                    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//
+//                                    }
+//
+//                                    @Override
+//                                    public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//                                    }
+//                                });
+//
+//
 //                            }
 //                        })
 //                        .show();
