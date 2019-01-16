@@ -47,6 +47,7 @@ import java.util.Date;
 public class CreditMoney extends AppCompatActivity  {
     EditText ResultEt;
     ImageView PreviewIv;
+    int SavedCount;
     View ImageView;
     Button btnOption, btnCall, btnRescan, btnSave;
     Calendar calendar;
@@ -83,6 +84,9 @@ public class CreditMoney extends AppCompatActivity  {
         btnRescan=(Button)findViewById(R.id.idBtnRescan);
         btnSave=(Button)findViewById(R.id.idBtnSave);
 
+        //Count saved or not
+        SavedCount=0;
+
         //DataBase
         final DataBase db = new DataBase(getApplicationContext(),"Subject_History",null,1);
         db.QueryData("CREATE TABLE IF NOT EXISTS Table_works(Id INTEGER PRIMARY KEY AUTOINCREMENT,Name VARCHAR(150),Time VARCHAR(150),Day VARCHAR(150),Image BLOB)");
@@ -117,6 +121,7 @@ public class CreditMoney extends AppCompatActivity  {
 
                     );
                     Toast.makeText(CreditMoney.this,"Saved",Toast.LENGTH_SHORT).show();
+                    SavedCount++;
                 }
             }
         });
@@ -147,39 +152,55 @@ public class CreditMoney extends AppCompatActivity  {
         btnCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mHour = calendar.get(Calendar.HOUR_OF_DAY);
-                mMinute = calendar.get(Calendar.MINUTE);
-                mYear = calendar.get(Calendar.YEAR);
-                mMonth = calendar.get(Calendar.MONTH) + 1;
-                mDay = calendar.get(Calendar.DATE);
 
-                mDate = mDay + "/" + mMonth + "/" + mYear;
-                mTime = mHour + ":" + mMinute;
+                if (SavedCount < 1) {
 
-                String Name = ResultEt.getText().toString();
-                String Time = mTime.toString();
-                String Date = mDate.toString();
-                if(Name.equals(""))
-                {
-                    Toast.makeText(CreditMoney.this,"Please insert data",Toast.LENGTH_SHORT).show();
-                }
-                else {
 
-                    db.INSERT_SUBJECT(
-                            Name,
-                            Time,
-                            Date,
-                            ImageView_To_Byte(image_uri)
-                    );
+                    mHour = calendar.get(Calendar.HOUR_OF_DAY);
+                    mMinute = calendar.get(Calendar.MINUTE);
+                    mYear = calendar.get(Calendar.YEAR);
+                    mMonth = calendar.get(Calendar.MONTH) + 1;
+                    mDay = calendar.get(Calendar.DATE);
+
+                    mDate = mDay + "/" + mMonth + "/" + mYear;
+                    mTime = mHour + ":" + mMinute;
+
+                    String Name = ResultEt.getText().toString();
+                    String Time = mTime.toString();
+                    String Date = mDate.toString();
+                    if (Name.equals("")) {
+                        Toast.makeText(CreditMoney.this, "Please insert data", Toast.LENGTH_SHORT).show();
+                    } else {
+
+                        db.INSERT_SUBJECT(
+                                Name,
+                                Time,
+                                Date,
+                                ImageView_To_Byte(image_uri)
+                        );
+                        btnSave.setVisibility(View.INVISIBLE);
+                        SavedCount++;
+                        //Call
+                        String number1 = new String("*100*");
+                        String number = ResultEt.getText().toString();
+                        String txtCode = "#";
+                        txtCode = number1 + number + txtCode;
+                        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", txtCode, null)));
+
+                    }
+
+                } else {
                     //Call
                     String number1 = new String("*100*");
                     String number = ResultEt.getText().toString();
-                    String txtCode="#";
-                    txtCode = number1+number+txtCode;
+                    String txtCode = "#";
+                    txtCode = number1 + number + txtCode;
                     startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", txtCode, null)));
+
 
                 }
             }
+
         });
 
         ImageView.setOnClickListener(new View.OnClickListener() {

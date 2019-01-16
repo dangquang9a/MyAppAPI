@@ -2,6 +2,7 @@ package com.example.duongthanhtin.myappapi;
 
 import android.Manifest;
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -28,6 +29,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.android.gms.vision.Frame;
@@ -139,7 +141,7 @@ public class CalendarCard extends  AppCompatActivity {
                             @Override
 
                             public void onClick(DialogInterface dialog, int which) {
-                            arrEditText.add(editTextName.getText().toString());
+                                arrEditText.add(editTextName.getText().toString());
 
                                 ArrayAdapter<String> adapterName = new ArrayAdapter(CalendarCard.this, android.R.layout.simple_spinner_item,arrEditText);
                                 adapterName.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
@@ -283,6 +285,36 @@ public class CalendarCard extends  AppCompatActivity {
                     }
                 }, year, month, day);
                 datePickerDialog.show();
+
+
+
+            }
+        });
+        btnEditTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                //TODO: display time picker here
+
+                final int year = mCalendar.get(Calendar.YEAR);
+                final int month = mCalendar.get(Calendar.MONTH);
+                final int day = mCalendar.get(Calendar.DAY_OF_MONTH);
+                final int hour = mCalendar.get(Calendar.HOUR_OF_DAY);
+                int minute = mCalendar.get(Calendar.MINUTE);
+                TimePickerDialog timePickerDialog = new TimePickerDialog(CalendarCard.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        mCalendar.set(year,month,day,hourOfDay,minute);
+
+                        String hourstring=Integer.toString(hourOfDay);
+                        String minutestring = new String();
+                        if (minute<10) minutestring = "0" +Integer.toString(minute);
+                        else minutestring=Integer.toString(minute);
+
+                        editTextTime.setText(hourstring+":"+minutestring);
+                    }
+                }, hour, minute, true);
+
+                timePickerDialog.show();
 
 
 
@@ -457,7 +489,7 @@ public class CalendarCard extends  AppCompatActivity {
 
                     // Set Date
                     mCalendar.set(cardInformation.getDate().getYear(),cardInformation.getDate().getMonth(),cardInformation.getDate().getDay());
-                    //mCalendar.set(cardInformation.getDate().getYear(),cardInformation.getDate().getMonth(),cardInformation.getDate().getDay(),cardInformation.getDate().getHour(),cardInformation.getDate().getMinute());
+                    mCalendar.set(cardInformation.getDate().getYear(),cardInformation.getDate().getMonth(),cardInformation.getDate().getDay(),cardInformation.getDate().getHour(),cardInformation.getDate().getMinute());
                     editTextDate.setText(cardInformation.getDate().toString());
 
 
