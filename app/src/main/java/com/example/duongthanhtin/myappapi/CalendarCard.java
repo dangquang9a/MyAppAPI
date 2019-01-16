@@ -99,8 +99,20 @@ public class CalendarCard extends  AppCompatActivity {
         cameraPermission = new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
 
+
         //Storage Permission
         storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
+        btnScan.setEnabled(false);
+        // Enable if permission granted
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) ==
+                PackageManager.PERMISSION_GRANTED) {
+            btnScan.setEnabled(true);
+        }
+        // Else ask for permission
+        else {
+            ActivityCompat.requestPermissions(this, new String[]
+                    { Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE }, 0);
+        }
 
 
         previewIMG.setOnClickListener(new View.OnClickListener() {
@@ -303,6 +315,7 @@ public class CalendarCard extends  AppCompatActivity {
                     calIntent.setType("vnd.android.cursor.item/event");
                     calIntent.putExtra(CalendarContract.Events.TITLE, spinnerName.getSelectedItem().toString());
                     calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, spinnerLocation.getSelectedItem().toString()+" " +spinnerLocation2.getSelectedItem().toString());
+                    calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,mCalendar.getTimeInMillis());
                     startActivity(calIntent);
                 }
             }
