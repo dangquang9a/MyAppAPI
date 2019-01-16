@@ -18,7 +18,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.AdapterView;
@@ -38,10 +37,8 @@ import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.ByteArrayOutputStream;
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class CalendarCard extends  AppCompatActivity {
@@ -454,29 +451,28 @@ public class CalendarCard extends  AppCompatActivity {
                     cardInformation = textAnalyzer.getCardInformation();
 
 
-                    //Log.d("My app","Dates: "+cardInformation.getDates());
-                    //Log.d("My app","Dates: "+cardInformation.getDates().toString());
-
-                    mCalendar.set(cardInformation.getDates().getYear(),cardInformation.getDates().getMonth(),cardInformation.getDates().getDay());
-                    //mCalendar.set(cardInformation.getDates().getYear(),cardInformation.getDates().getMonth(),cardInformation.getDates().getDay(),cardInformation.getDates().getHour(),cardInformation.getDates().getMinute());
+                    //Log.d("My app","Dates: "+cardInformation.getDate());
+                    //Log.d("My app","Dates: "+cardInformation.getDate().toString());
 
 
-                    editTextDate.setText(cardInformation.getDates().toString());
+                    // Set Date
+                    mCalendar.set(cardInformation.getDate().getYear(),cardInformation.getDate().getMonth(),cardInformation.getDate().getDay());
+                    //mCalendar.set(cardInformation.getDate().getYear(),cardInformation.getDate().getMonth(),cardInformation.getDate().getDay(),cardInformation.getDate().getHour(),cardInformation.getDate().getMinute());
+                    editTextDate.setText(cardInformation.getDate().toString());
 
 
+                    // Set Time
+                    editTextTime.setText(cardInformation.getTimes().toString());
 
 
-                    //editTextTime.setText(cardInformation.getTimes().toString());
-
-
-                    //Log.d("My app","Dates: "+cardInformation.getDates());
+                    //Log.d("My app","Dates: "+cardInformation.getDate());
 
 
                     //case 1: arrlist=cardInformation.getAddresses(); //Location
                     //case 2: arrlist=cardInformation.getEmails(); //Email
                     //case 3: arrlist=cardInformation.getEventNames(); //Event Name
                     //case 4: arrlist=cardInformation.getPhoneNumbers(); //Phone Numbers
-                    //case 5: arrlist=cardInformation.getDates().toArray(); //Dates and Times
+                    //case 5: arrlist=cardInformation.getDate().toArray(); //Dates and Times
 
                     PutDataInSpinner(cardInformation, spinnerLocation, 1);
                     PutDataInSpinner(cardInformation, spinnerLocation2, 1);
@@ -485,7 +481,7 @@ public class CalendarCard extends  AppCompatActivity {
                     //etName.setText(String.valueOf(cardInformation.getEventNames().get(1)));
                     //etContact.setText(String.valueOf(cardInformation.getEmails().get(1)));
                     //etContact.setText(String.valueOf(cardInformation.getPhoneNumbers().get(1)));
-                    //etDate.setText(String.valueOf(cardInformation.getDates().get(1)));
+                    //etDate.setText(String.valueOf(cardInformation.getDate().get(1)));
 
                 }
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
@@ -567,8 +563,8 @@ public class CalendarCard extends  AppCompatActivity {
 //
 //            }
 //            case 5: {
-//                //arrlisttime=cardInformation.getDates(); //Dates
-////                List<MyDateTime> allObjects =cardInformation.getDates(); //Dates
+//                //arrlisttime=cardInformation.getDate(); //Dates
+////                List<MyDateTime> allObjects =cardInformation.getDate(); //Dates
 ////                arrlist.clear();
 ////                for (MyDateTime object : allObjects)
 ////                    if (object.isValidDay())

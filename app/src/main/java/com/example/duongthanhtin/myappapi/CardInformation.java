@@ -1,7 +1,6 @@
 package com.example.duongthanhtin.myappapi;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class CardInformation {
     public CardInformation() {
@@ -43,7 +42,7 @@ public class CardInformation {
     public MyDateTime getTimes() {
         if (times.size()>0)
         return times.get(0);
-        else return null;
+        else return new MyDateTime(0,0,0,0,0,0);
     }
 
     public void setTimes(ArrayList<MyDateTime> times) {
@@ -54,10 +53,12 @@ public class CardInformation {
         this.times.add(time);
     }
 
-    public MyDateTime getDates() {
+    public MyDateTime getDate() {
         if (dates.size()>0)
-        return dates.get(0);
-        else return null;
+            return dates.get(0);
+
+        // Return default date
+        else return new MyDateTime(2000, 1, 1, 0, 0, 0);
     }
 
     public void setDates(ArrayList<MyDateTime> dates) {
