@@ -88,6 +88,9 @@ public class CalendarCard extends  AppCompatActivity {
         editTextDate=findViewById(R.id.editTextDate);
         editTextTime=findViewById(R.id.editTextTime);
 
+        editTextTime.setKeyListener(null);
+        editTextDate.setKeyListener(null);
+
 
         resultText = "";
 
@@ -260,10 +263,12 @@ public class CalendarCard extends  AppCompatActivity {
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                        String monthstring = Integer.toString(monthOfYear);
+                        String monthstring = Integer.toString(monthOfYear + 1);
+                        //Don't know why ~~
                         String yearstring=Integer.toString(year);
                         String daystring=Integer.toString(dayOfMonth);
 
+                        mCalendar.set(year, monthOfYear, dayOfMonth);
                         editTextDate.setText(daystring+"/"+monthstring+"/"+yearstring);
 
                     }
