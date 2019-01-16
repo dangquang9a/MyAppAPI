@@ -127,19 +127,20 @@ public class TextAnalyzer {
 
         //Check number:
         if (numbers != null){
-            for (String number : numbers)
-                if (!TextUtils.isDigitsOnly(number))
-                    return false;
 
             // get hour
             int hour = -1;
-            //hour = Integer.parseInt(numbers.get(0));
+            try {
+                hour = Integer.parseInt(numbers.get(0));
+            } catch (NumberFormatException ignore) { }
 
             // get minute
-            int minute = 0;
-            if (numbers.size() > 1) {
-                //minute = Integer.parseInt(numbers.get(1));
-            }
+            int minute = -1;
+            try {
+                if (numbers.size() > 1)
+                    minute = Integer.parseInt(numbers.get(1));
+            } catch (NumberFormatException ignore) { }
+
 
             // set & check
             time.setTime(hour, minute, 0);
