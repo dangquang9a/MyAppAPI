@@ -1207,6 +1207,8 @@ id editLocation
 id editLocation2
 id editName
 id editText
+id editTextDate
+id editTextTime
 id editTime
 id edit_query
 id end
@@ -1338,11 +1340,9 @@ id snap
 id snapMargins
 id spacer
 id split_action_bar
-id spnDate
 id spnLocation
 id spnLocation2
 id spnName
-id spnTime
 id spread
 id spread_inside
 id src_atop
@@ -1589,6 +1589,7 @@ string take_photo
 string textday
 string textname
 string texttime
+string time
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -128,22 +128,22 @@ public class TextAnalyzer {
         //Check number:
         if (numbers != null){
             for (String number : numbers)
-                if (TextUtils.isDigitsOnly(number) == false)
+                if (!TextUtils.isDigitsOnly(number))
                     return false;
 
             // get hour
             int hour = -1;
-            hour = Integer.parseInt(numbers.get(0));
+            //hour = Integer.parseInt(numbers.get(0));
 
             // get minute
             int minute = 0;
             if (numbers.size() > 1) {
-                minute = Integer.parseInt(numbers.get(1));
+                //minute = Integer.parseInt(numbers.get(1));
             }
 
             // set & check
             time.setTime(hour, minute, 0);
-            if (time.isValidTime() == false)
+            if (!time.isValidTime())
                 return false;
         }
         else return false;
@@ -172,6 +172,7 @@ public class TextAnalyzer {
         else if (line.contains("OCT")) month = 10;
         else if (line.contains("NOV")) month = 11;
         else if (line.contains("DEC")) month = 12;
+
 
         else if (line.contains("THANG") && line.contains("MOT")) month = 1;
         else if (line.contains("THANG") && line.contains("GIENG")) month = 1;

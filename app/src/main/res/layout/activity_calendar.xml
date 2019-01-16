@@ -34,15 +34,21 @@
                     android:layout_height="40dp" />
 
 
-                <Spinner
-                    android:id="@+id/spnDate"
+                <EditText
+                    android:id="@+id/editTextDate"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="@string/date" />
 
-                <Spinner
-                    android:id="@+id/spnTime"
+                <EditText
+                    android:id="@+id/editTextTime"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" />
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/time"
+                    android:inputType="time" />
 
                 <Spinner
                     android:id="@+id/spnLocation"

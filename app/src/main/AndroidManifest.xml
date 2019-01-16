@@ -28,7 +28,7 @@
             android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
         <activity android:name=".Support" />
         <activity android:name=".History" />
-        <activity android:name=".Calendar"/>
+        <activity android:name=".CalendarCard"/>
         <activity android:name=".InterfaceRow"></activity>
         <activity android:name=".EditSpinner">
         </activity>

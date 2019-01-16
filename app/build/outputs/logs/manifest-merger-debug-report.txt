@@ -154,10 +154,10 @@ activity#com.example.duongthanhtin.myappapi.History
 ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:30:9-45
 	android:name
 		ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:30:19-42
-activity#com.example.duongthanhtin.myappapi.Calendar
-ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:31:9-45
+activity#com.example.duongthanhtin.myappapi.CalendarCard
+ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:31:9-49
 	android:name
-		ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:31:19-43
+		ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:31:19-47
 activity#com.example.duongthanhtin.myappapi.InterfaceRow
 ADDED from /Users/dangquang9a/Documents/GitHub/MyAppAPIz/app/src/main/AndroidManifest.xml:32:9-59
 	android:name

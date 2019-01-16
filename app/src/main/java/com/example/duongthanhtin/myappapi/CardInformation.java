@@ -40,8 +40,10 @@ public class CardInformation {
         this.addresses.add(address);
     }
 
-    public ArrayList<MyDateTime> getTimes() {
-        return times;
+    public MyDateTime getTimes() {
+        if (times.size()>0)
+        return times.get(0);
+        else return null;
     }
 
     public void setTimes(ArrayList<MyDateTime> times) {
@@ -52,8 +54,10 @@ public class CardInformation {
         this.times.add(time);
     }
 
-    public ArrayList<MyDateTime> getDates() {
-        return dates;
+    public MyDateTime getDates() {
+        if (dates.size()>0)
+        return dates.get(0);
+        else return null;
     }
 
     public void setDates(ArrayList<MyDateTime> dates) {

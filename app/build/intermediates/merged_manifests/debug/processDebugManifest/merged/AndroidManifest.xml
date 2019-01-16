@@ -34,7 +34,7 @@
             android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
         <activity android:name="com.example.duongthanhtin.myappapi.Support" />
         <activity android:name="com.example.duongthanhtin.myappapi.History" />
-        <activity android:name="com.example.duongthanhtin.myappapi.Calendar" />
+        <activity android:name="com.example.duongthanhtin.myappapi.CalendarCard" />
         <activity android:name="com.example.duongthanhtin.myappapi.InterfaceRow" />
         <activity android:name="com.example.duongthanhtin.myappapi.EditSpinner" >
         </activity>

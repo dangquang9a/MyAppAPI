@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.idCreditMoney: i = new Intent(this,CreditMoney.class); startActivity(i); break;
             case R.id.idSupport: i = new Intent(this,Support.class); startActivity(i); break;
             case R.id.idHistory: i = new Intent(this,History.class); startActivity(i); break;
-            case R.id.idCalendar: i = new Intent(this,Calendar.class); startActivity(i); break;
+            case R.id.idCalendar: i = new Intent(this, com.example.duongthanhtin.myappapi.CalendarCard.class); startActivity(i); break;
             case R.id.btnExit: finish(); break;
             default: break;
         }
