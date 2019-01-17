@@ -250,9 +250,10 @@ public class CreditMoney extends AppCompatActivity  {
 
     //Image Gallery
     private void pickGallery() {
-        Intent intent= new Intent(Intent.ACTION_PICK);
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("image/*");
-        startActivityForResult(intent,IMAGE_PICK_CAMERA_CODE);
+        startActivityForResult(intent,IMAGE_PICK_GALLERY_CODE);
     }
 
     private void requestStoragePermission() {
@@ -318,7 +319,7 @@ public class CreditMoney extends AppCompatActivity  {
         }
     }
 
-    //handle img result and Have text
+    //handle img result and get text
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
     {

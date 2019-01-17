@@ -4,23 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
     android:orientation="vertical"
     tools:context=".History">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="20dp">
-
-    </LinearLayout>
 
     <ListView
         android:id="@+id/idListViewHistory"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="match_parent"
         android:layout_gravity="top|fill_vertical|center_horizontal"
         android:layout_margin="10dp"
         android:background="@drawable/rounded_page"
