@@ -15,6 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/Background"
         android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher"
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name="com.UIT.QTV.ScanMaster.MainActivity">

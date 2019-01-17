@@ -14,7 +14,7 @@ public class Support extends AppCompatActivity {
 
 
     private EditText Name,Content;
-    private Button Send, Cancel;
+    private Button Send;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +39,8 @@ public class Support extends AppCompatActivity {
                     Intent i = new Intent(Intent.ACTION_SEND);
                     i.setType("message/rfc822");
                     i.putExtra(Intent.EXTRA_EMAIL, new String[]{"dangquang9a@gmail.com"});
-                    i.putExtra(Intent.EXTRA_SUBJECT, "ScanThisCard Support");
-                    i.putExtra(Intent.EXTRA_TEXT, "I'm " + Name.getText() + ", ơlease help me with: " + Content.getText());
+                    i.putExtra(Intent.EXTRA_SUBJECT, "ScanMaster Support");
+                    i.putExtra(Intent.EXTRA_TEXT, "I'm " + Name.getText() + ", please help me with: " + Content.getText());
                     try {
                         startActivity(Intent.createChooser(i, "Send mail..."));
                     } catch (android.content.ActivityNotFoundException ex) {
