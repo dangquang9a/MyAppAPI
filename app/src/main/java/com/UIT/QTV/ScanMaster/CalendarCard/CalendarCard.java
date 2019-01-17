@@ -32,6 +32,7 @@ import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.UIT.QTV.ScanMaster.Credit.CreditMoney;
 import com.UIT.QTV.ScanMaster.R;
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.text.TextBlock;
@@ -91,6 +92,7 @@ public class CalendarCard extends  AppCompatActivity {
         editTextTime.setKeyListener(null);
         editTextDate.setKeyListener(null);
 
+        btnCreat.setVisibility(View.INVISIBLE);
 
         resultText = "";
 
@@ -102,11 +104,9 @@ public class CalendarCard extends  AppCompatActivity {
 
         //Storage Permission
         storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
-        btnScan.setEnabled(false);
         // Enable if permission granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) ==
                 PackageManager.PERMISSION_GRANTED) {
-            btnScan.setEnabled(true);
         }
         // Else ask for permission
         else {
@@ -119,6 +119,7 @@ public class CalendarCard extends  AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showImageImportDialog();
+
             }
         });
         btnEditSpinnerName.setOnClickListener(new View.OnClickListener() {
@@ -334,21 +335,25 @@ public class CalendarCard extends  AppCompatActivity {
 
             @Override
             public void onClick(View v){
+
+
+                final String timetest = editTextTime.getText().toString();
+                final String datetest = editTextDate.getText().toString();
                 final String strName = spinnerName.getSelectedItem().toString();
                 final String strContent = spinnerLocation.getSelectedItem().toString();
 
-                if(strName.equals("") || strContent.equals(""))
+                if(strName.equals("") || strContent.equals("")|| timetest.equals("") || datetest.equals(""))
                 {
-                    Toast.makeText(CalendarCard.this,"Please select a valid field",Toast.LENGTH_SHORT).show();
-                } else {
-                    Intent calIntent = new Intent(Intent.ACTION_INSERT);
-                    calIntent.setType("vnd.android.cursor.item/event");
-                    calIntent.putExtra(CalendarContract.Events.TITLE, spinnerName.getSelectedItem().toString());
-                    calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, spinnerLocation.getSelectedItem().toString()+" " +spinnerLocation2.getSelectedItem().toString());
-                    calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,mCalendar.getTimeInMillis());
-                    startActivity(calIntent);
+                    Toast.makeText(CalendarCard.this,"Please insert data to all field",Toast.LENGTH_SHORT).show();
+                    } else {
+                        Intent calIntent = new Intent(Intent.ACTION_INSERT);
+                        calIntent.setType("vnd.android.cursor.item/event");
+                        calIntent.putExtra(CalendarContract.Events.TITLE, spinnerName.getSelectedItem().toString());
+                        calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, spinnerLocation.getSelectedItem().toString()+" " +spinnerLocation2.getSelectedItem().toString());
+                        calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,mCalendar.getTimeInMillis());
+                        startActivity(calIntent);
+                    }
                 }
-            }
         });
     }
 
@@ -451,6 +456,7 @@ public class CalendarCard extends  AppCompatActivity {
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
+                btnCreat.setVisibility(View.VISIBLE);
                 //ResultEt.setFocusableInTouchMode(true);
                 Uri resultUri = result.getUri(); //lay img uri
                 //  dat img vao img view
