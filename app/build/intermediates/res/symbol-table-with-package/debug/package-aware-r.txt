@@ -1161,7 +1161,6 @@ id beginning
 id blocking
 id bottom
 id btnExit
-id btn_cancel
 id btn_send
 id button
 id button2
@@ -1235,13 +1234,11 @@ id icon
 id icon_group
 id icon_only
 id idBtnCall
-id idBtnCancel
 id idBtnCreateEvent
 id idBtnOption
 id idBtnRescan
 id idBtnRescanCalendar
 id idBtnSave
-id idBtnSaveCalendar
 id idCalendar
 id idCreditMoney
 id idHistory

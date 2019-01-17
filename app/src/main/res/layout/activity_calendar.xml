@@ -145,18 +145,17 @@
             android:paddingRight="10dp">
 
             <Button
-                android:id="@+id/idBtnSaveCalendar"
+                android:id="@+id/idBtnRescanCalendar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:text="Save"
-                android:textAllCaps="true"
+                android:text="Scan"
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/idBtnRescanCalendar"
+                android:id="@+id/idBtnCreateEvent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -164,8 +163,12 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_button"
-                android:text="Rescan"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Create"
                 android:textColor="@color/white" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -180,29 +183,6 @@
             android:paddingEnd="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp">
-
-            <Button
-                android:id="@+id/idBtnCreateEvent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button"
-                android:text="Create"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/idBtnCancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button"
-                android:text="Cancel"
-                android:textAllCaps="true"
-                android:textColor="@color/white" />
 
         </LinearLayout>
     </LinearLayout>

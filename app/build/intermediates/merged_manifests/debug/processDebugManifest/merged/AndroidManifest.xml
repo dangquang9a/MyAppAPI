@@ -23,23 +23,21 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Background" >
-        <activity android:name="com.example.duongthanhtin.myappapi.MainActivity" >
+        <activity android:name="com.UIT.QTV.ScanMaster.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.duongthanhtin.myappapi.CreditMoney" />
+        <activity android:name="com.UIT.QTV.ScanMaster.Credit.CreditMoney" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
-        <activity android:name="com.example.duongthanhtin.myappapi.Support" />
-        <activity android:name="com.example.duongthanhtin.myappapi.History" />
-        <activity android:name="com.example.duongthanhtin.myappapi.CalendarCard" />
-        <activity android:name="com.example.duongthanhtin.myappapi.InterfaceRow" />
-        <activity android:name="com.example.duongthanhtin.myappapi.EditSpinner" >
-        </activity>
+        <activity android:name="com.UIT.QTV.ScanMaster.Support.Support" />
+        <activity android:name="com.UIT.QTV.ScanMaster.History.History" />
+        <activity android:name="com.UIT.QTV.ScanMaster.CalendarCard.CalendarCard" />
+        <activity android:name="com.UIT.QTV.ScanMaster.History.InterfaceRow" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.duongthanhtin.myappapi">
+    package="com.UIT.QTV.ScanMaster">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -17,23 +17,21 @@
         android:supportsRtl="true"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.UIT.QTV.ScanMaster.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreditMoney" />
+        <activity android:name="com.UIT.QTV.ScanMaster.Credit.CreditMoney" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
-        <activity android:name=".Support" />
-        <activity android:name=".History" />
-        <activity android:name=".CalendarCard"/>
-        <activity android:name=".InterfaceRow"></activity>
-        <activity android:name=".EditSpinner">
-        </activity>
+        <activity android:name="com.UIT.QTV.ScanMaster.Support.Support" />
+        <activity android:name="com.UIT.QTV.ScanMaster.History.History" />
+        <activity android:name="com.UIT.QTV.ScanMaster.CalendarCard.CalendarCard"/>
+        <activity android:name="com.UIT.QTV.ScanMaster.History.InterfaceRow"></activity>
     </application>
 
 </manifest>
